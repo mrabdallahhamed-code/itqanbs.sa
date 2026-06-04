@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إتقان لخدمات الأعمال | itqanbs.sa</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--g:#1E3A2F;--g2:#2A5240;--g3:#3A7A58;--gpale:#EAF2EE;--gtint:#F3F8F5;--gold:#B8922A;--gold2:#D4AF4E;--gold3:#F2D784;--w:#FFFFFF;--off:#F8FAF8;--t:#121E18;--t2:#2D4A38;--t3:#5A7A68;--bd:rgba(30,58,47,0.1);--sh:0 4px 32px rgba(30,58,47,0.08);--sh2:0 20px 60px rgba(30,58,47,0.14)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:"Tajawal",sans-serif;background:var(--w);color:var(--t);overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:300;height:74px;padding:0 4rem;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--bd);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 2px 20px rgba(30,58,47,0.1)}
+.logo{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+.logo img{height:48px;width:auto;object-fit:contain}
+.logo-txt .ln{font-size:.92rem;font-weight:800;color:var(--g)}
+.logo-txt .le{font-size:.56rem;color:var(--t3);letter-spacing:.15em;text-transform:uppercase;direction:ltr}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
+.nav-links a{color:var(--t2);text-decoration:none;font-size:.86rem;font-weight:500;transition:color .2s;position:relative}
+.nav-links a:not(.nb)::after{content:"";position:absolute;bottom:-4px;right:0;width:0;height:2px;background:var(--gold);border-radius:2px;transition:width .3s}
+.nav-links a:not(.nb):hover{color:var(--g)}.nav-links a:not(.nb):hover::after{width:100%}
+.nb{padding:.5rem 1.4rem;background:var(--g);color:var(--w)!important;border-radius:6px;font-weight:700!important;transition:all .25s!important;box-shadow:0 4px 14px rgba(30,58,47,0.25)}
+.nb:hover{background:var(--g2)!important;transform:translateY(-1px)}.nb::after{display:none!important}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.ham span{width:24px;height:2px;background:var(--g);border-radius:2px}
+.ticker{background:var(--g);height:40px;display:flex;align-items:center;overflow:hidden;margin-top:74px}
+.ticker-track{display:flex;animation:tick 35s linear infinite;white-space:nowrap}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ti{display:inline-flex;align-items:center;gap:.5rem;padding:0 2rem;font-size:.76rem;font-weight:600;color:rgba(255,255,255,.85);letter-spacing:.06em;border-left:1px solid rgba(255,255,255,.15);flex-shrink:0}
+.ti .d{width:5px;height:5px;border-radius:50%;background:var(--gold2);flex-shrink:0}
+.hero{min-height:calc(100vh - 114px);display:grid;grid-template-columns:55% 45%;position:relative;overflow:hidden}
+.hero-l{background:var(--g);padding:5rem 4rem;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.hero-l::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.03) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
+.hero-l::before{content:"";position:absolute;bottom:-100px;right:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(184,146,42,.1) 0%,transparent 65%);pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;padding:.3rem .9rem;border-radius:100px;border:1px solid rgba(184,146,42,.35);background:rgba(184,146,42,.07);font-size:.7rem;font-weight:700;color:var(--gold2);letter-spacing:.12em;text-transform:uppercase;margin-bottom:2rem;width:fit-content;position:relative;z-index:1;animation:fsu .7s ease both}
+.pulse{width:6px;height:6px;border-radius:50%;background:var(--gold2);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.6)}}
+.hero-l h1{font-family:"Cormorant Garamond",serif;font-size:clamp(2.8rem,4.5vw,4.2rem);font-weight:700;line-height:1.12;color:var(--w);margin-bottom:1.4rem;position:relative;z-index:1;animation:fsu .8s .1s ease both}
+.hero-l h1 em{color:var(--gold2);font-style:normal}
+.hero-l p{font-size:1rem;line-height:1.9;color:rgba(255,255,255,.68);max-width:460px;margin-bottom:2.5rem;font-weight:300;position:relative;z-index:1;animation:fsu .8s .2s ease both}
+.hero-acts{display:flex;gap:.9rem;flex-wrap:wrap;position:relative;z-index:1;animation:fsu .8s .3s ease both}
+.bp{padding:.85rem 2rem;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--g);font-family:"Tajawal",sans-serif;font-size:.9rem;font-weight:800;border:none;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:0 4px 18px rgba(184,146,42,.35);transition:all .25s}
+.bp:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(184,146,42,.45)}
+.bs{padding:.85rem 2rem;background:transparent;color:rgba(255,255,255,.85);font-family:"Tajawal",sans-serif;font-size:.9rem;font-weight:600;border:1.5px solid rgba(255,255,255,.25);border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block;transition:all .25s}
+.bs:hover{border-color:var(--gold2);color:var(--gold2)}
+.hero-stats{display:flex;gap:0;margin-top:3.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.1);position:relative;z-index:1;animation:fsu .8s .4s ease both}
+.hs{display:flex;flex-direction:column;padding-left:2rem;margin-left:2rem;border-left:1px solid rgba(255,255,255,.1)}
+.hs:first-child{padding-left:0;margin-left:0;border-left:none}
+.hs-n{font-family:"Cormorant Garamond",serif;font-size:2.2rem;font-weight:700;color:var(--gold2);line-height:1}
+.hs-l{font-size:.7rem;color:rgba(255,255,255,.5);margin-top:.3rem}
+.hero-r{position:relative;overflow:hidden;background:#0a1a12}
+.hero-r img{width:100%;height:100%;object-fit:cover;opacity:.5;animation:zoom 14s ease forwards}
+@keyframes zoom{from{transform:scale(1.06)}to{transform:scale(1)}}
+.hero-r-ov{position:absolute;inset:0;background:linear-gradient(90deg,var(--g) 0%,transparent 35%),linear-gradient(0deg,rgba(10,26,18,.7) 0%,transparent 50%)}
+.hero-badge{position:absolute;bottom:2.5rem;left:2.5rem;background:rgba(255,255,255,.95);border-radius:10px;padding:1.1rem 1.5rem;box-shadow:0 8px 32px rgba(0,0,0,.2);display:flex;align-items:center;gap:.9rem;animation:fsd .9s .5s ease both}
+.hb-ico{width:42px;height:42px;background:var(--gpale);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.hb-n{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:700;color:var(--g);line-height:1}
+.hb-t{font-size:.7rem;color:var(--t3)}
+@keyframes fsu{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fsd{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+section{padding:7rem 4rem}
+.sl{display:inline-flex;align-items:center;gap:.7rem;font-size:.68rem;font-weight:800;letter-spacing:.28em;text-transform:uppercase;color:var(--g3);margin-bottom:.9rem}
+.sl::before{content:"";width:26px;height:2px;background:var(--gold);border-radius:2px}
+.st{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,3.2vw,3rem);font-weight:700;line-height:1.2;color:var(--t);max-width:580px;margin-bottom:1rem}
+.sd{font-size:.97rem;line-height:1.95;color:var(--t3);max-width:540px}
+.gline{width:48px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px;margin:1rem 0 2rem}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.sectors{background:var(--off)}
+.sectors-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.sec-card{border-radius:14px;overflow:hidden;position:relative;cursor:default;height:320px;transition:all .35s}
+.sec-card:hover{transform:translateY(-6px);box-shadow:var(--sh2)}
+.sec-img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.sec-card:hover .sec-img{transform:scale(1.06)}
+.sec-ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,26,18,.85) 0%,rgba(10,26,18,.3) 60%,transparent 100%);transition:all .35s}
+.sec-card:hover .sec-ov{background:linear-gradient(0deg,rgba(10,26,18,.9) 0%,rgba(10,26,18,.5) 70%,rgba(30,58,47,.2) 100%)}
+.sec-content{position:absolute;bottom:0;left:0;right:0;padding:2rem}
+.sec-ico{font-size:2rem;margin-bottom:.6rem;display:block}
+.sec-card h3{font-size:1.1rem;font-weight:700;color:var(--w);margin-bottom:.5rem}
+.sec-card p{font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.7;max-height:0;overflow:hidden;transition:max-height .35s ease,opacity .35s ease;opacity:0}
+.sec-card:hover p{max-height:100px;opacity:1}
+.sec-tag{display:inline-flex;margin-top:.7rem;padding:.25rem .8rem;background:rgba(184,146,42,.25);border:1px solid rgba(184,146,42,.4);border-radius:100px;font-size:.7rem;color:var(--gold3);font-weight:600}
+.about{background:var(--w)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.about-img-wrap{position:relative}
+.about-main-img{width:100%;border-radius:16px;object-fit:cover;height:520px;display:block}
+.about-badge-wrap{position:absolute;bottom:-2rem;right:-2rem;background:var(--g);border-radius:12px;padding:1.5rem 2rem;box-shadow:var(--sh2)}
+.ab-num{font-family:"Cormorant Garamond",serif;font-size:2.8rem;font-weight:700;color:var(--gold2);line-height:1}
+.ab-txt{font-size:.75rem;color:rgba(255,255,255,.7);margin-top:.2rem}
+.about-features{display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem}
+.af{display:flex;gap:1rem;align-items:flex-start;padding:1.2rem;background:var(--off);border:1px solid var(--bd);border-radius:10px;transition:all .25s}
+.af:hover{border-color:rgba(30,58,47,.22);box-shadow:var(--sh);transform:translateX(-4px)}
+.af-ico{width:42px;height:42px;flex-shrink:0;background:var(--gpale);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.af h4{font-size:.9rem;font-weight:700;color:var(--t);margin-bottom:.2rem}
+.af p{font-size:.82rem;color:var(--t3);line-height:1.7}
+.clients-sec{background:var(--g);padding:5rem 4rem}
+.clients-sec .sl{color:var(--gold2)}.clients-sec .sl::before{background:var(--gold2)}
+.clients-sec .st{color:var(--w)}.clients-sec .gline{background:linear-gradient(90deg,var(--gold2),var(--gold3))}
+.clients-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:3rem}
+.cl-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:1.6rem;transition:all .3s;display:flex;align-items:center;gap:1rem}
+.cl-card:hover{background:rgba(255,255,255,.1);border-color:rgba(184,146,42,.35);transform:translateY(-3px)}
+.cl-ico{width:44px;height:44px;background:rgba(184,146,42,.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.cl-name{font-size:.88rem;font-weight:700;color:var(--w);line-height:1.3}
+.cl-type{font-size:.72rem;color:rgba(255,255,255,.5);margin-top:.2rem}
+.blog{background:var(--off)}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.bl-card{background:var(--w);border:1px solid var(--bd);border-radius:12px;overflow:hidden;transition:all .3s}
+.bl-card:hover{box-shadow:var(--sh2);transform:translateY(-5px)}
+.bl-img{width:100%;height:180px;object-fit:cover;transition:transform .4s;display:block}
+.bl-card:hover .bl-img{transform:scale(1.04)}
+.bl-body{padding:1.5rem}
+.bl-cat{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g3);margin-bottom:.6rem}
+.bl-body h3{font-size:1rem;font-weight:700;color:var(--t);margin-bottom:.6rem;line-height:1.4}
+.bl-body p{font-size:.82rem;color:var(--t3);line-height:1.7}
+.bl-footer{display:flex;align-items:center;justify-content:space-between;margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--bd)}
+.bl-date{font-size:.72rem;color:var(--t3)}
+.bl-link{font-size:.78rem;font-weight:700;color:var(--g);text-decoration:none}
+.faq{background:var(--w)}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:3rem;align-items:start}
+.faq-list{display:flex;flex-direction:column;gap:.8rem}
+.faq-item{border:1px solid var(--bd);border-radius:10px;overflow:hidden;transition:all .25s}
+.faq-item.open{border-color:rgba(30,58,47,.25);box-shadow:var(--sh)}
+.faq-q{padding:1.2rem 1.5rem;display:flex;align-items:center;justify-content:space-between;cursor:pointer;gap:1rem}
+.faq-q span{font-size:.92rem;font-weight:700;color:var(--t)}
+.faq-icon{width:28px;height:28px;border-radius:50%;background:var(--gpale);display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;transition:all .3s;color:var(--g)}
+.faq-item.open .faq-icon{background:var(--g);color:var(--w);transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;font-size:.85rem;color:var(--t3);line-height:1.8;padding:0 1.5rem}
+.faq-item.open .faq-a{max-height:200px;padding:0 1.5rem 1.2rem}
+.faq-visual{background:var(--g);border-radius:16px;padding:3rem;position:relative;overflow:hidden}
+.faq-visual::before{content:"";position:absolute;top:-60px;right:-60px;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(184,146,42,.12) 0%,transparent 70%)}
+.fv-title{font-family:"Cormorant Garamond",serif;font-size:1.8rem;font-weight:700;color:var(--w);margin-bottom:.8rem;position:relative;z-index:1}
+.fv-text{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.85;margin-bottom:2rem;position:relative;z-index:1}
+.fv-contact{display:flex;flex-direction:column;gap:.8rem;position:relative;z-index:1}
+.fvc{display:flex;align-items:center;gap:.8rem;padding:1rem;background:rgba(255,255,255,.07);border-radius:8px;border:1px solid rgba(255,255,255,.1)}
+.fvc-ico{font-size:1.1rem}.fvc h5{font-size:.7rem;font-weight:700;color:var(--gold2);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.15rem}
+.fvc p{font-size:.85rem;color:rgba(255,255,255,.75)}
+.cta{background:linear-gradient(135deg,var(--g) 0%,var(--g2) 60%,#142A1E 100%);padding:6rem 4rem;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(184,146,42,.08) 1px,transparent 1px);background-size:30px 30px}
+.cta h2{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:700;color:var(--w);margin-bottom:1.2rem;position:relative;z-index:1}
+.cta h2 em{color:var(--gold2);font-style:normal}
+.cta p{font-size:.97rem;color:rgba(255,255,255,.65);max-width:460px;margin:0 auto 2.5rem;line-height:1.9;position:relative;z-index:1}
+.cta-acts{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+.bg{padding:.9rem 2.2rem;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--g);font-family:"Tajawal",sans-serif;font-size:.92rem;font-weight:800;border:none;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:0 4px 18px rgba(184,146,42,.4);transition:all .25s}
+.bg:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(184,146,42,.5)}
+.bo{padding:.9rem 2.2rem;background:transparent;color:rgba(255,255,255,.85);font-family:"Tajawal",sans-serif;font-size:.92rem;font-weight:600;border:1.5px solid rgba(255,255,255,.25);border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block;transition:all .25s}
+.bo:hover{border-color:var(--gold2);color:var(--gold2)}
+.contact{background:var(--off)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;margin-top:2.5rem}
+.contact-info{display:flex;flex-direction:column;gap:1.2rem;margin-top:1.5rem}
+.ci{display:flex;gap:1rem;align-items:flex-start;padding:1.2rem;background:var(--w);border:1px solid var(--bd);border-radius:10px;transition:all .25s}
+.ci:hover{border-color:rgba(30,58,47,.22);box-shadow:var(--sh)}
+.ci-ico{width:42px;height:42px;background:var(--gpale);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.ci h5{font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);margin-bottom:.2rem}
+.ci p{font-size:.9rem;color:var(--t2)}
+.cform{background:var(--w);border-radius:14px;border:1px solid var(--bd);padding:2.5rem;box-shadow:var(--sh)}
+.cf-title{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:700;color:var(--t);margin-bottom:1.5rem}
+.fg{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem}
+.fg label{font-size:.75rem;font-weight:700;color:var(--t2);letter-spacing:.04em}
+.fg input,.fg select,.fg textarea{background:var(--off);border:1.5px solid var(--bd);border-radius:8px;color:var(--t);padding:.78rem 1rem;font-family:"Tajawal",sans-serif;font-size:.9rem;outline:none;transition:all .2s;width:100%;resize:none}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--g3);box-shadow:0 0 0 3px rgba(30,58,47,.07);background:var(--w)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+footer{background:var(--t);padding:5rem 4rem 2.5rem}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:2rem}
+.fb-logo img{height:50px;width:auto;object-fit:contain;background:rgba(255,255,255,.9);border-radius:8px;padding:5px 10px;margin-bottom:1rem}
+.fb p{font-size:.83rem;color:rgba(255,255,255,.45);line-height:1.85;max-width:270px;font-weight:300}
+.fc h5{font-size:.67rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:1.2rem;font-weight:700}
+.fc ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.fc ul a{font-size:.83rem;color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s;font-weight:300}
+.fc ul a:hover{color:var(--w)}
+.fbot{display:flex;justify-content:space-between;align-items:center}
+.fbot p{font-size:.75rem;color:rgba(255,255,255,.3)}
+.fbot span{font-size:.75rem;color:var(--gold2);letter-spacing:.1em;direction:ltr;opacity:.6}
+.mobile-menu{display:none;position:fixed;top:74px;left:0;right:0;background:var(--w);border-bottom:1px solid var(--bd);padding:1.5rem 2rem;z-index:299;flex-direction:column;gap:1rem;box-shadow:var(--sh2)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:var(--t2);text-decoration:none;font-size:.95rem;font-weight:500;padding:.5rem 0;border-bottom:1px solid var(--bd)}
+@media(max-width:1100px){
+nav,section,.clients-sec,.cta,footer{padding-left:2rem;padding-right:2rem}
+.hero{grid-template-columns:1fr}.hero-r{display:none}.hero-l{padding:4rem 2rem}
+.about-grid,.faq-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}
+.about-badge-wrap{right:1rem;bottom:-1rem}
+.sectors-grid,.clients-grid,.blog-grid{grid-template-columns:1fr 1fr}
+.ft{grid-template-columns:1fr 1fr}.frow{grid-template-columns:1fr}
+.nav-links{display:none}.ham{display:flex}
+}
+@media(max-width:640px){
+.sectors-grid,.clients-grid,.blog-grid{grid-template-columns:1fr}
+.hero-stats{flex-wrap:wrap;gap:1.2rem}
+.hs{border-left:none;padding-left:0;margin-left:0;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:1rem}
+}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a class="logo" href="#"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAFDAZUDASIAAhEBAxEB/8QAGgABAQEBAQEBAAAAAAAAAAAAAAQDBQIBBv/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAu+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmmk6TPS0AAAAAAAAAAAAAAAAAAAAAAj5cnWhi6RXN0PphzupyzpbfmKzuMN7QAAAAAAAAAAAAAAAAAAAPztE92cppNTsVfluvbpBJtJ0+boN+vyOvaFoAAAAAAAAAAAAAAAAAAH526G7M5fW5PWTj9bk9Y5nR5/QJwb9fkde0LQAAAAAAAAAAAAAAAAAAPzt0N2Zy+tz705HW5PWObfB0CdtgUdfkde0LQAAAAAAAAAAAAAAAAAAOLF+nnkgs59Jx+tyetJze7wukuEXS6VRdEAtAAAAAAAAAAAAAAAAAAAAefQ49N6Tm9IAtAAAAAAAAAAAAAAAAAAAAHmPTx7AoAAAAAAA8fY9CgAAAAAAAAAABPFCOyA0SVyc6rkroNwBhvDztLL5LrtFbqMdozb1Npm/aOf0LOfVLVjWw74AAAAAAAAAAAY7IlqII/ctMlckK5K6DcAfM4udt+y+c3oOdfuehuCfLb1DdLz6paueth3wAAAAAAAAAAiol52z2bgVJ895cdXSVyaiuSug3AOfTLZw1qO+ZPnvPhu0d8J6J8XG6G7N59UtWbsO+AAAAAAAAAAJvPrPjq0dsgYYa58dWyVyaivn65taRqVpB9z9Yc9dPzz/mp6rj3xa0jrmufxnm/bobq59UtWbsO+AAAAAAAAAAM4OnLzu/vmbS2/JMrFON0rLV0zOoZs32gTKRMpEykTKRMpEykY7PmpjrJ55avfPvXIUAAAAAAAAAB4yoZT+9QGgAAAAAAAACWqfFb873z1ez07YCgAAAAAAAADPwbsvhs+fD0zGj5kbMvpoy+Gzxmbshqy1DL4bMfpqz8G8u/nL5rhpWj59oAAAAAAAAACPT39Jd9JjFvqS+qfp64/ZnM9fX0i03+Efu3M+TVkk6OFC8z3QJ/u3sj0q+EtuYj96+k96+fSgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACAAMAAAAh888888888888888888888888888888888888885888888888888888888888887wFU0888888888888888888888/P4DrX88888888888888888888+r/jrX88888888888888888888+n/TnX88888888888888888888M0/SQ/8888888888888888888888vf888888888888888888888+28888888808888888888889/8AK1PPKonPHHVPPPPPPPPPPPPLP5K1PPK5UPP9lPPPPPPPPPPPLfvJa1PPN/EPKllPPPPPPPPPPPE/PI60s87XS8ZVlPPPPPPPPPPPDWscPjrvvvvvvGYfvPPPPPPPPPPP3/PPPPPPPPPKNPPPPPPPPPPPPNPOMOOPNPOOMI3dPPPPPPPPPPINKIMFNAAXGNGGHXPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP/9oADAMBAAIAAwAAABDzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzyrTzzzzzzzzzzzzzzzzzzzzzyBCov/Tzzzzzzzzzzzzzzzzzzzys/NtvTzzzzzzzzzzzzzzzzzzzyqsOOtTzzzzzzzzzzzzzzzzzzzyq8NO9Tzzzzzzzzzzzzzzzzzzzzu0MaR/zzzzzzzzzzzzzzzzzzzzyyy/zzzzzzzzzzzzzzzzzzzzz7Xzzzzzzzz/zzzzzzzzzzzzzXz7/AM87gV/q28888888888888/e3+/88w2R8qU888888888888F/wDHvv8AzzvyLzxTzzzzzzzzzzzxbzzD7/LBjALLJTzzzzzzzzzzzxl7e30677zzzz/wDbzzzzzzzzzzw51zzzzzzzzzzlr/AM8888888880048400w40w009I888888888888Aq0QEsUR4CAAcfc8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888//xAAzEQABAwIBCgQGAgMAAAAAAAABAAIDBBExBRASFCEwQFFSgSIzNLETFTJBQqFx8FBhcP/aAAgBAgEBPwD/AAxfY2QN+HLgFdxRZc3RBGCD+fDD6lclB2xFxKO0XTcOFH1JqGBQ+kr8U3DhR9SbihgUMCvxTcOFLOSF8ChgU02C0ScUBbh9EIC3DEgC5TXBwu03G5EjC7QB272WRsbS5ygnbM3Sbmyh5B7Kh8hueulljjvGjPPqmnbxf3aqKSSSLSkxVbJJHEXRYpk9QaQyW8SyfNNLGTKqP10nf33skbZG6LsFFCyJuixNqw6b4VllDyD2VD5Dc9VWthOg0XcjWVYFzHs/gqlrWVGzA8s00nwoy+2CpKg1EemRZUfrpO/vvKt7nPbC37posLDM/wANaDzVf5B7Kh8huejs6qeXY7ffM+zcoDQzVvp3/wALJXp+5VH66Tv77xzrVov/AHZnmN6xoH+lX+QeypayGOINcdq+YQc/0vmNPz/SnnjbL8aE7fuE7KzdDY3aqSaJrzNM7xFfMqfn+lVV8EkLmNO0rJXp+5VH66Tv77ytp3OtIzEKLKDbWk2FSZQiA8O0qihe55mkT2NeNFwuFqcHStTg6VqcHStTg6QtSp+kLUqfoC1Gn6AtRp+gJkbIW2aLBCtpWSlzGm5+4QNxfePgjebuam08TTcNG7rwTTuAKpsoxMhDC03HJMdpNDrWvxE1PHMAJBcBRwxxizG2/wCE/wD/xAAqEQACAQIEBQQCAwAAAAAAAAABAgADERMhMTIQEjBAUQQiM0EUQiNQcP/aAAgBAwEBPwD+mLW7gsBLkwreG/1A/nthulzA2ULEw5i8XTtRui6waGDaZ+sXTtRui6waGDaZ+sXTtSniAnQwaGLpOUnWAW7flEAt21rwgjI9HlNr9VVLGwjoUNjwobxK288aKqzWaBExeX6lZVVrLKKqzWaMiYvL9Suqq3tlX4V6qsVNxGcsbmGkQnNKG8StvPGnRLi5yEwqWnNKlIpn9cEXmYCVU5GtKvwr1KSgAuYTc34LnRlDeJW3njVypC3A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" alt="إتقان"><div class="logo-txt"><div class="ln">إتقان لخدمات الأعمال</div><div class="le">ITQAN BUSINESS SERVICES</div></div></a>
+  <ul class="nav-links">
+    <li><a href="#about">من نحن</a></li>
+    <li><a href="#sectors">القطاعات</a></li>
+    <li><a href="#clients">عملاؤنا</a></li>
+    <li><a href="#blog">المدونة</a></li>
+    <li><a href="#faq">الأسئلة الشائعة</a></li>
+    <li><a href="#contact" class="nb">تواصل معنا</a></li>
+  </ul>
+  <div class="ham" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">من نحن</a>
+  <a href="#sectors" onclick="toggleMenu()">القطاعات</a>
+  <a href="#clients" onclick="toggleMenu()">عملاؤنا</a>
+  <a href="#blog" onclick="toggleMenu()">المدونة</a>
+  <a href="#faq" onclick="toggleMenu()">الأسئلة الشائعة</a>
+  <a href="#contact" onclick="toggleMenu()">تواصل معنا</a>
+</div>
+<div class="ticker"><div class="ticker-track">
+  <span class="ti"><span class="d"></span>القطاع الصناعي</span><span class="ti"><span class="d"></span>القطاع التجاري</span><span class="ti"><span class="d"></span>الشركات الناشئة</span><span class="ti"><span class="d"></span>التسويق الرقمي</span><span class="ti"><span class="d"></span>التحول الرقمي وأنظمة ERP</span><span class="ti"><span class="d"></span>الاستثمار الأجنبي</span><span class="ti"><span class="d"></span>موارد بشرية وحسابات</span>
+  <span class="ti"><span class="d"></span>القطاع الصناعي</span><span class="ti"><span class="d"></span>القطاع التجاري</span><span class="ti"><span class="d"></span>الشركات الناشئة</span><span class="ti"><span class="d"></span>التسويق الرقمي</span><span class="ti"><span class="d"></span>التحول الرقمي وأنظمة ERP</span><span class="ti"><span class="d"></span>الاستثمار الأجنبي</span><span class="ti"><span class="d"></span>موارد بشرية وحسابات</span>
+</div></div>
+
+<section class="hero" id="home">
+  <div class="hero-l">
+    <div class="eyebrow"><span class="pulse"></span>شريككم في النجاح والنمو</div>
+    <h1>حلول أعمال متكاملة<br>لكل <em>قطاع وطموح</em></h1>
+    <p>إتقان لخدمات الأعمال — نقدم حلولاً متكاملة للمؤسسات والشركات في المملكة العربية السعودية، من التأسيس إلى التحول الرقمي والاستثمار الأجنبي.</p>
+    <div class="hero-acts"><a href="#sectors" class="bp">اكتشف خدماتنا</a><a href="#contact" class="bs">تواصل معنا</a></div>
+    <div class="hero-stats">
+      <div class="hs"><span class="hs-n">+9</span><span class="hs-l">شركات خدمناها</span></div>
+      <div class="hs"><span class="hs-n">6</span><span class="hs-l">قطاعات متخصصة</span></div>
+      <div class="hs"><span class="hs-n">100%</span><span class="hs-l">التزام بالجودة</span></div>
+    </div>
+  </div>
+  <div class="hero-r">
+    <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=1200&q=80" alt="الرياض">
+    <div class="hero-r-ov"></div>
+    <div class="hero-badge"><div class="hb-ico">🏙️</div><div><div class="hb-n">الرياض</div><div class="hb-t">العليا فيو — العليا</div></div></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-img-wrap reveal">
+      <img class="about-main-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80" alt="فريق إتقان">
+      <div class="about-badge-wrap"><div class="ab-num">2018</div><div class="ab-txt">تأسست في الرياض</div></div>
+    </div>
+    <div class="reveal" style="transition-delay:.15s">
+      <div class="sl">من نحن</div>
+      <h2 class="st">شريككم الاستراتيجي في بيئة الأعمال السعودية</h2>
+      <div class="gline"></div>
+      <p class="sd" style="margin-bottom:2rem">إتقان لخدمات الأعمال شركة سعودية متخصصة في تقديم الحلول المتكاملة لمختلف القطاعات، نجمع بين الخبرة العميقة والمعرفة بالسوق المحلي لنكون الشريك الأمثل لنجاح أعمالك.</p>
+      <div class="about-features">
+        <div class="af"><div class="af-ico">🎯</div><div><h4>رؤيتنا</h4><p>أن نكون الشريك الأول للأعمال في المملكة، نُمكّن كل مؤسسة من تحقيق أهدافها بكفاءة وإتقان.</p></div></div>
+        <div class="af"><div class="af-ico">💡</div><div><h4>رسالتنا</h4><p>تقديم حلول أعمال متكاملة ومبتكرة تجمع بين الخبرة القانونية والمالية والتقنية لدعم نمو عملائنا.</p></div></div>
+        <div class="af"><div class="af-ico">⭐</div><div><h4>قيمنا</h4><p>الأمانة • الإتقان • الشفافية • الالتزام • الابتكار • الشراكة الحقيقية.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sectors" id="sectors">
+  <div class="sl">قطاعاتنا</div>
+  <h2 class="st">نخدم كل قطاع بخبرة متخصصة</h2>
+  <div class="gline"></div>
+  <p class="sd">نمتلك فرقاً متخصصة لكل قطاع، نفهم تحدياتك ونقدم الحلول المناسبة لطبيعة نشاطك التجاري.</p>
+  <div class="sectors-grid">
+    <div class="sec-card reveal"><img class="sec-img" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80" alt="صناعة"><div class="sec-ov"></div><div class="sec-content"><span class="sec-ico">🏭</span><h3>القطاع الصناعي</h3><p>حلول متكاملة للمصانع والمنشآت الصناعية تشمل الإدارة والامتثال والتطوير التشغيلي.</p><span class="sec-tag">Manufacturing</span></div></div>
+    <div class="sec-card reveal" style="transition-delay:.08s"><img class="sec-img" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80" alt="تجاري"><div class="sec-ov"></div><div class="sec-content"><span class="sec-ico">🏪</span><h3>القطاع التجاري</h3><p>دعم الشركات التجارية في التسجيل والتراخيص وإدارة العمليات اليومية بكفاءة عالية.</p><span class="sec-tag">Commerce</span></div></div>
+    <div class="sec-card reveal" style="transition-delay:.16s"><img class="sec-img" src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80" alt="ناشئة"><div class="sec-ov"></div><div class="sec-content"><span class="sec-ico">🚀</span><h3>الشركات الناشئة</h3><p>نرافق رواد الأعمال من الفكرة إلى التأسيس والنمو المستدام في بيئة الأعمال السعودية.</p><span class="sec-tag">Startups</span></div></div>
+    <div class="sec-card reveal" style="transition-delay:.08s"><img class="sec-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="تسويق"><div class="sec-ov"></div><div class="sec-content"><span class="sec-ico">📱</span><h3>التسويق الرقمي</h3><p>استراتيجيات تسويق رقمي متكاملة تبني هويتك وتوسع حضورك في السوق السعودي والخليجي.</p><span class="sec-tag">Digital Marketing</span></div></div>
+    <div class="sec-card reveal" style="transition-delay:.16s"><img class="sec-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80" alt="ERP"><div class="sec-ov"></div><div class="sec-content"><span class="sec-ico">💻</span><h3>التحول الرقمي وأنظمة ERP</h3><p>تحويل عمليات شركتك رقمياً بأفضل أنظمة ERP لتحقيق كفاءة تشغيلية استثنائية.</p><span class="sec-tag">Digital Transformation</span></div></div>
+    <div class="sec-card reveal" style="transition-delay:.24s"><img class="sec-img" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" alt="استثمار"><div class="sec-ov"></div><div class="sec-content"><span class="sec-ico">🌍</span><h3>قطاع الاستثمار الأجنبي</h3><p>تأسيس شركات بملكية أجنبية 100% والحصول على رخصة MISA بأسرع وقت ممكن.</p><span class="sec-tag">Foreign Investment</span></div></div>
+  </div>
+</section>
+
+<section class="clients-sec" id="clients">
+  <div class="sl">عملاؤنا</div>
+  <h2 class="st">شركات وثقت بنا وحققنا معاً النجاح</h2>
+  <div class="gline"></div>
+  <div class="clients-grid">
+    <div class="cl-card reveal"><div class="cl-ico">💪</div><div><div class="cl-name">شركة أعمال اللياقة الرياضي</div><div class="cl-type">قطاع رياضي</div></div></div>
+    <div class="cl-card reveal" style="transition-delay:.06s"><div class="cl-ico">⚙️</div><div><div class="cl-name">ريوسيرف إندستريال سوليوشنز</div><div class="cl-type">قطاع صناعي</div></div></div>
+    <div class="cl-card reveal" style="transition-delay:.12s"><div class="cl-ico">🔧</div><div><div class="cl-name">شركة القدرة المحركة للتجارة</div><div class="cl-type">قطاع تجاري</div></div></div>
+    <div class="cl-card reveal" style="transition-delay:.18s"><div class="cl-ico">💎</div><div><div class="cl-name">شركة ركاز نجد</div><div class="cl-type">قطاع تجاري</div></div></div>
+    <div class="cl-card reveal" style="transition-delay:.24s"><div class="cl-ico">🏢</div><div><div class="cl-name">شركة أسوار المتحدة القابضة</div><div class="cl-type">قطاع استثماري</div></div></div>
+    <div class="cl-card reveal" style="transition-delay:.3s"><div class="cl-ico">🤝</div><div><div class="cl-name">شركة نقوة للاستقدام</div><div class="cl-type">موارد بشرية</div></div></div>
+    <div class="cl-card reveal" style="transition-delay:.12s"><div class="cl-ico">👑</div><div><div class="cl-name">شركة حلقاء النخبة</div><div class="cl-type">قطاع تجاري</div></div></div>
+    <div class="cl-card reveal" style="transition-delay:.18s"><div class="cl-ico">📋</div><div><div class="cl-name">مكتب بن عثيمين للاستشارات</div><div class="cl-type">استشارات أعمال</div></div></div>
+    <div class="cl-card reveal" style="transition-delay:.24s"><div class="cl-ico">🏃</div><div><div class="cl-name">شركة أنماط الحركة</div><div class="cl-type">قطاع خدمات</div></div></div>
+  </div>
+</section>
+
+<section class="blog" id="blog">
+  <div class="sl">مدونة إتقان</div>
+  <h2 class="st">رؤى وأفكار لتطوير أعمالك</h2>
+  <div class="gline"></div>
+  <div class="blog-grid">
+    <div class="bl-card reveal"><img class="bl-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="مقال"><div class="bl-body"><div class="bl-cat">الاستثمار الأجنبي</div><h3>كيف تحصل على رخصة MISA في 15 يوماً؟</h3><p>دليل شامل لخطوات الحصول على رخصة الاستثمار الأجنبي من وزارة الاستثمار السعودية.</p><div class="bl-footer"><span class="bl-date">يناير 2025</span><a href="#" class="bl-link">اقرأ المزيد ←</a></div></div></div>
+    <div class="bl-card reveal" style="transition-delay:.1s"><img class="bl-img" src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80" alt="مقال"><div class="bl-body"><div class="bl-cat">التحول الرقمي</div><h3>أفضل أنظمة ERP للشركات السعودية في 2025</h3><p>مقارنة شاملة بين أبرز أنظمة ERP المتوافقة مع متطلبات هيئة الزكاة والضريبة.</p><div class="bl-footer"><span class="bl-date">فبراير 2025</span><a href="#" class="bl-link">اقرأ المزيد ←</a></div></div></div>
+    <div class="bl-card reveal" style="transition-delay:.2s"><img class="bl-img" src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80" alt="مقال"><div class="bl-body"><div class="bl-cat">الشركات الناشئة</div><h3>رحلة تأسيس شركتك في المملكة خطوة بخطوة</h3><p>من فكرة المشروع إلى السجل التجاري والتراخيص — دليلك الكامل لعام 2025.</p><div class="bl-footer"><span class="bl-date">مارس 2025</span><a href="#" class="bl-link">اقرأ المزيد ←</a></div></div></div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="faq-grid">
+    <div class="reveal">
+      <div class="sl">الأسئلة الشائعة</div>
+      <h2 class="st">إجابات على أهم استفساراتكم</h2>
+      <div class="gline"></div>
+      <div class="faq-list">
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>ما هي خدمات إتقان لخدمات الأعمال؟</span><div class="faq-icon">+</div></div><div class="faq-a">نقدم حلولاً متكاملة تشمل: تأسيس الشركات، الموارد البشرية، الحسابات والمالية، التسويق الرقمي، التحول الرقمي وأنظمة ERP، والاستثمار الأجنبي.</div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>كم يستغرق تأسيس شركة في المملكة؟</span><div class="faq-icon">+</div></div><div class="faq-a">يستغرق تأسيس الشركة من 7 إلى 15 يوم عمل حسب نوع الكيان القانوني والقطاع. نتولى جميع الإجراءات نيابةً عنكم.</div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>هل تخدمون الشركات الأجنبية؟</span><div class="faq-icon">+</div></div><div class="faq-a">نعم، نتخصص في مساعدة المستثمرين الأجانب على تأسيس شركاتهم في المملكة بملكية 100% والحصول على رخصة MISA.</div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>ما هي أنظمة ERP التي تدعمونها؟</span><div class="faq-icon">+</div></div><div class="faq-a">ندعم SAP وOracle وOdoo وMicrosoft Dynamics مع ضمان التوافق الكامل مع هيئة الزكاة والضريبة والجمارك.</div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>هل تقدمون خدمات التسويق الرقمي؟</span><div class="faq-icon">+</div></div><div class="faq-a">نعم، نقدم SEO والإعلانات الممولة وإدارة منصات التواصل الاجتماعي وبناء الهوية الرقمية الكاملة.</div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>أين موقعكم في الرياض؟</span><div class="faq-icon">+</div></div><div class="faq-a">مقرنا في العليا فيو، حي العليا، الرياض — في قلب حي الأعمال بالمملكة.</div></div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:.15s">
+      <div class="faq-visual">
+        <div class="fv-title">هل لديك سؤال آخر؟</div>
+        <p class="fv-text">فريقنا المتخصص جاهز للإجابة على جميع استفساراتك وتقديم الحلول المناسبة.</p>
+        <div class="fv-contact">
+          <div class="fvc"><span class="fvc-ico">📞</span><div><h5>الهاتف</h5><p dir="ltr">+966 56 905 1686</p></div></div>
+          <div class="fvc"><span class="fvc-ico">✉️</span><div><h5>البريد الإلكتروني</h5><p dir="ltr">info@itqanbs.sa</p></div></div>
+          <div class="fvc"><span class="fvc-ico">📍</span><div><h5>الموقع</h5><p>العليا فيو — العليا — الرياض</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>مستعد لتطوير <em>أعمالك</em>؟</h2>
+  <p>تواصل معنا اليوم واحصل على استشارة مجانية من خبرائنا.</p>
+  <div class="cta-acts"><a href="#contact" class="bg">احجز استشارة مجانية</a><a href="tel:+966569051686" class="bo">اتصل الآن</a></div>
+</div>
+
+<section class="contact" id="contact">
+  <div class="sl">تواصل معنا</div>
+  <h2 class="st">نسعد بخدمتكم دائماً</h2>
+  <div class="gline"></div>
+  <div class="contact-grid">
+    <div>
+      <p class="sd">فريقنا المتخصص جاهز لمساعدتك في تحقيق أهداف أعمالك بأعلى معايير الجودة.</p>
+      <div class="contact-info">
+        <div class="ci"><div class="ci-ico">📍</div><div><h5>الموقع</h5><p>العليا فيو — حي العليا — الرياض</p></div></div>
+        <div class="ci"><div class="ci-ico">📞</div><div><h5>الهاتف</h5><p dir="ltr">+966 56 905 1686</p></div></div>
+        <div class="ci"><div class="ci-ico">✉️</div><div><h5>البريد الإلكتروني</h5><p dir="ltr">info@itqanbs.sa</p></div></div>
+        <div class="ci"><div class="ci-ico">🌐</div><div><h5>الموقع الإلكتروني</h5><p dir="ltr">itqanbs.sa</p></div></div>
+      </div>
+    </div>
+    <form class="cform" onsubmit="handleSubmit(event)">
+      <div class="cf-title">أرسل لنا رسالة</div>
+      <div class="frow">
+        <div class="fg"><label>الاسم الكامل</label><input type="text" placeholder="محمد العتيبي" required></div>
+        <div class="fg"><label>رقم الجوال</label><input type="tel" placeholder="+966 5X XXX XXXX" dir="ltr"></div>
+      </div>
+      <div class="fg"><label>البريد الإلكتروني</label><input type="email" placeholder="email@company.com" required></div>
+      <div class="fg"><label>القطاع</label>
+        <select><option value="">اختر القطاع...</option><option>القطاع الصناعي</option><option>القطاع التجاري</option><option>الشركات الناشئة</option><option>التسويق الرقمي</option><option>التحول الرقمي وأنظمة ERP</option><option>الاستثمار الأجنبي</option></select>
+      </div>
+      <div class="fg"><label>رسالتك</label><textarea rows="4" placeholder="كيف يمكننا مساعدتك؟"></textarea></div>
+      <button type="submit" class="bp" style="width:100%;border:none;padding:1rem;font-size:1rem;border-radius:8px">إرسال الرسالة ←</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="ft">
+    <div class="fb"><div class="fb-logo"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAFDAZUDASIAAhEBAxEB/8QAGgABAQEBAQEBAAAAAAAAAAAAAAQDBQIBBv/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAu+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmmk6TPS0AAAAAAAAAAAAAAAAAAAAAAj5cnWhi6RXN0PphzupyzpbfmKzuMN7QAAAAAAAAAAAAAAAAAAAPztE92cppNTsVfluvbpBJtJ0+boN+vyOvaFoAAAAAAAAAAAAAAAAAAH526G7M5fW5PWTj9bk9Y5nR5/QJwb9fkde0LQAAAAAAAAAAAAAAAAAAPzt0N2Zy+tz705HW5PWObfB0CdtgUdfkde0LQAAAAAAAAAAAAAAAAAAOLF+nnkgs59Jx+tyetJze7wukuEXS6VRdEAtAAAAAAAAAAAAAAAAAAAAefQ49N6Tm9IAtAAAAAAAAAAAAAAAAAAAAHmPTx7AoAAAAAAA8fY9CgAAAAAAAAAABPFCOyA0SVyc6rkroNwBhvDztLL5LrtFbqMdozb1Npm/aOf0LOfVLVjWw74AAAAAAAAAAAY7IlqII/ctMlckK5K6DcAfM4udt+y+c3oOdfuehuCfLb1DdLz6paueth3wAAAAAAAAAAiol52z2bgVJ895cdXSVyaiuSug3AOfTLZw1qO+ZPnvPhu0d8J6J8XG6G7N59UtWbsO+AAAAAAAAAAJvPrPjq0dsgYYa58dWyVyaivn65taRqVpB9z9Yc9dPzz/mp6rj3xa0jrmufxnm/bobq59UtWbsO+AAAAAAAAAAM4OnLzu/vmbS2/JMrFON0rLV0zOoZs32gTKRMpEykTKRMpEykY7PmpjrJ55avfPvXIUAAAAAAAAAB4yoZT+9QGgAAAAAAAACWqfFb873z1ez07YCgAAAAAAAADPwbsvhs+fD0zGj5kbMvpoy+Gzxmbshqy1DL4bMfpqz8G8u/nL5rhpWj59oAAAAAAAAACPT39Jd9JjFvqS+qfp64/ZnM9fX0i03+Efu3M+TVkk6OFC8z3QJ/u3sj0q+EtuYj96+k96+fSgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACAAMAAAAh888888888888888888888888888888888888885888888888888888888888887wFU0888888888888888888888/P4DrX88888888888888888888+r/jrX88888888888888888888+n/TnX88888888888888888888M0/SQ/8888888888888888888888vf888888888888888888888+28888888808888888888889/8AK1PPKonPHHVPPPPPPPPPPPPLP5K1PPK5UPP9lPPPPPPPPPPPLfvJa1PPN/EPKllPPPPPPPPPPPE/PI60s87XS8ZVlPPPPPPPPPPPDWscPjrvvvvvvGYfvPPPPPPPPPPP3/PPPPPPPPPKNPPPPPPPPPPPPNPOMOOPNPOOMI3dPPPPPPPPPPINKIMFNAAXGNGGHXPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP/9oADAMBAAIAAwAAABDzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzyrTzzzzzzzzzzzzzzzzzzzzzyBCov/Tzzzzzzzzzzzzzzzzzzzys/NtvTzzzzzzzzzzzzzzzzzzzyqsOOtTzzzzzzzzzzzzzzzzzzzyq8NO9Tzzzzzzzzzzzzzzzzzzzzu0MaR/zzzzzzzzzzzzzzzzzzzzyyy/zzzzzzzzzzzzzzzzzzzzz7Xzzzzzzzz/zzzzzzzzzzzzzXz7/AM87gV/q28888888888888/e3+/88w2R8qU888888888888F/wDHvv8AzzvyLzxTzzzzzzzzzzzxbzzD7/LBjALLJTzzzzzzzzzzzxl7e30677zzzz/wDbzzzzzzzzzzw51zzzzzzzzzzlr/AM8888888880048400w40w009I888888888888Aq0QEsUR4CAAcfc8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888//xAAzEQABAwIBCgQGAgMAAAAAAAABAAIDBBExBRASFCEwQFFSgSIzNLETFTJBQqFx8FBhcP/aAAgBAgEBPwD/AAxfY2QN+HLgFdxRZc3RBGCD+fDD6lclB2xFxKO0XTcOFH1JqGBQ+kr8U3DhR9SbihgUMCvxTcOFLOSF8ChgU02C0ScUBbh9EIC3DEgC5TXBwu03G5EjC7QB272WRsbS5ygnbM3Sbmyh5B7Kh8hueulljjvGjPPqmnbxf3aqKSSSLSkxVbJJHEXRYpk9QaQyW8SyfNNLGTKqP10nf33skbZG6LsFFCyJuixNqw6b4VllDyD2VD5Dc9VWthOg0XcjWVYFzHs/gqlrWVGzA8s00nwoy+2CpKg1EemRZUfrpO/vvKt7nPbC37posLDM/wANaDzVf5B7Kh8huejs6qeXY7ffM+zcoDQzVvp3/wALJXp+5VH66Tv77xzrVov/AHZnmN6xoH+lX+QeypayGOINcdq+YQc/0vmNPz/SnnjbL8aE7fuE7KzdDY3aqSaJrzNM7xFfMqfn+lVV8EkLmNO0rJXp+5VH66Tv77ytp3OtIzEKLKDbWk2FSZQiA8O0qihe55mkT2NeNFwuFqcHStTg6VqcHStTg6QtSp+kLUqfoC1Gn6AtRp+gJkbIW2aLBCtpWSlzGm5+4QNxfePgjebuam08TTcNG7rwTTuAKpsoxMhDC03HJMdpNDrWvxE1PHMAJBcBRwxxizG2/wCE/wD/xAAqEQACAQIEBQQCAwAAAAAAAAABAgADERMhMTIQEjBAUQQiM0EUQiNQcP/aAAgBAwEBPwD+mLW7gsBLkwreG/1A/nthulzA2ULEw5i8XTtRui6waGDaZ+sXTtRui6waGDaZ+sXTtSniAnQwaGLpOUnWAW7flEAt21rwgjI9HlNr9VVLGwjoUNjwobxK288aKqzWaBExeX6lZVVrLKKqzWaMiYvL9Suqq3tlX4V6qsVNxGcsbmGkQnNKG8StvPGnRLi5yEwqWnNKlIpn9cEXmYCVU5GtKvwr1KSgAuYTc34LnRlDeJW3njVypC3A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" alt="إتقان"></div><p>شريككم في النجاح — نقدم حلول أعمال متكاملة لجميع القطاعات في المملكة العربية السعودية بأعلى معايير الجودة.</p></div>
+    <div class="fc"><h5>القطاعات</h5><ul><li><a href="#sectors">القطاع الصناعي</a></li><li><a href="#sectors">القطاع التجاري</a></li><li><a href="#sectors">الشركات الناشئة</a></li><li><a href="#sectors">التسويق الرقمي</a></li><li><a href="#sectors">التحول الرقمي</a></li></ul></div>
+    <div class="fc"><h5>الشركة</h5><ul><li><a href="#about">من نحن</a></li><li><a href="#clients">عملاؤنا</a></li><li><a href="#blog">المدونة</a></li><li><a href="#faq">الأسئلة الشائعة</a></li></ul></div>
+    <div class="fc"><h5>تواصل معنا</h5><ul><li><a href="tel:+966569051686">+966 56 905 1686</a></li><li><a href="mailto:info@itqanbs.sa">info@itqanbs.sa</a></li><li><a href="#">العليا فيو — الرياض</a></li><li><a href="https://invest.itqan.sa">invest.itqan.sa ↗</a></li></ul></div>
+  </div>
+  <div class="fbot"><p>© 2025 إتقان لخدمات الأعمال. جميع الحقوق محفوظة.</p><span>itqanbs.sa</span></div>
+</footer>
+
+<script>
+window.addEventListener("scroll",()=>document.getElementById("nav").classList.toggle("scrolled",scrollY>20));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth",block:"start"})}}));
+const ro=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add("visible")}),{threshold:0.1});
+document.querySelectorAll(".reveal").forEach(el=>ro.observe(el));
+function toggleMenu(){document.getElementById("mobileMenu").classList.toggle("open")}
+function toggleFaq(el){const isOpen=el.classList.contains("open");document.querySelectorAll(".faq-item").forEach(i=>i.classList.remove("open"));if(!isOpen)el.classList.add("open")}
+function handleSubmit(e){e.preventDefault();const btn=e.target.querySelector("button[type=submit]");const orig=btn.textContent;btn.textContent="✓ تم الإرسال بنجاح!";btn.style.background="var(--g3)";setTimeout(()=>{btn.textContent=orig;btn.style.background="";e.target.reset()},3000)}
+</script>
+</body>
+</html>
