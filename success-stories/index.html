@@ -164,7 +164,7 @@ section{padding:7rem 4rem;scroll-margin-top:114px}
 .cl-type{font-size:.72rem;color:rgba(255,255,255,.5);margin-top:.2rem}
 .blog{background:var(--off)}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
-.bl-card{background:var(--w);border:1px solid var(--bd);border-radius:12px;overflow:hidden;transition:all .3s}
+.bl-card{background:var(--w);border:1px solid var(--bd);border-radius:12px;overflow:hidden;transition:all .3s;display:block;text-decoration:none;color:inherit}
 .bl-card:hover{box-shadow:var(--sh2);transform:translateY(-5px)}
 .bl-img{width:100%;height:180px;object-fit:cover;transition:transform .4s;display:block}
 .bl-card:hover .bl-img{transform:scale(1.04)}
@@ -356,6 +356,25 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:right}
 .sector-offer-tags a:hover{background:var(--g);color:var(--w)}
 .sector-offer-cta{display:inline-block;margin-top:.9rem;font-size:.82rem;font-weight:700;color:var(--w);background:var(--g);padding:.6rem 1.3rem;border-radius:8px;text-decoration:none}
 .sector-offer-cta:hover{background:var(--g2)}
+
+/* Article / blog post */
+.article-wrap{background:var(--w);padding:4rem}
+.article-body{max-width:760px;margin:0 auto}
+.article-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.8rem;color:var(--t3);margin-bottom:1.6rem;align-items:center}
+.article-meta .bl-cat{margin:0}
+.article-hero-img{width:100%;border-radius:14px;margin-bottom:2.5rem;max-height:420px;object-fit:cover;display:block}
+.article-body h2{font-family:"Cormorant Garamond",serif;font-size:1.55rem;font-weight:700;color:var(--t);margin-top:2.6rem;margin-bottom:1rem}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--t);margin-top:1.8rem;margin-bottom:.7rem}
+.article-body p{font-size:.95rem;line-height:2;color:var(--t2);margin-bottom:1.3rem}
+.article-body ul,.article-body ol{padding-right:1.4rem;margin-bottom:1.3rem}
+.article-body li{margin-bottom:.7rem;font-size:.93rem;line-height:1.9;color:var(--t2)}
+.article-body strong{color:var(--t);font-weight:700}
+.article-lede{font-size:1.05rem;line-height:1.95;color:var(--t2);margin-bottom:1.8rem;padding-bottom:1.8rem;border-bottom:1px solid var(--bd)}
+.article-cta-box{background:var(--gpale);border:1px solid var(--bd);border-radius:14px;padding:2rem;margin-top:3rem;text-align:center}
+.article-cta-box h4{font-family:"Cormorant Garamond",serif;font-size:1.3rem;color:var(--t);margin-bottom:.6rem}
+.article-cta-box p{font-size:.86rem;color:var(--t3);margin-bottom:1.2rem}
+.article-note{background:var(--off);border-right:3px solid var(--gold);border-radius:8px;padding:1.2rem 1.4rem;margin:1.8rem 0;font-size:.86rem;color:var(--t3);line-height:1.85}
+@media(max-width:1100px){.article-wrap{padding:2.5rem 1.5rem}}
 
 /* Client logo cards */
 .cl-card{padding:1rem 1.2rem}

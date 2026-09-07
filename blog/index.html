@@ -164,7 +164,7 @@ section{padding:7rem 4rem;scroll-margin-top:114px}
 .cl-type{font-size:.72rem;color:rgba(255,255,255,.5);margin-top:.2rem}
 .blog{background:var(--off)}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
-.bl-card{background:var(--w);border:1px solid var(--bd);border-radius:12px;overflow:hidden;transition:all .3s}
+.bl-card{background:var(--w);border:1px solid var(--bd);border-radius:12px;overflow:hidden;transition:all .3s;display:block;text-decoration:none;color:inherit}
 .bl-card:hover{box-shadow:var(--sh2);transform:translateY(-5px)}
 .bl-img{width:100%;height:180px;object-fit:cover;transition:transform .4s;display:block}
 .bl-card:hover .bl-img{transform:scale(1.04)}
@@ -357,6 +357,25 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:right}
 .sector-offer-cta{display:inline-block;margin-top:.9rem;font-size:.82rem;font-weight:700;color:var(--w);background:var(--g);padding:.6rem 1.3rem;border-radius:8px;text-decoration:none}
 .sector-offer-cta:hover{background:var(--g2)}
 
+/* Article / blog post */
+.article-wrap{background:var(--w);padding:4rem}
+.article-body{max-width:760px;margin:0 auto}
+.article-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.8rem;color:var(--t3);margin-bottom:1.6rem;align-items:center}
+.article-meta .bl-cat{margin:0}
+.article-hero-img{width:100%;border-radius:14px;margin-bottom:2.5rem;max-height:420px;object-fit:cover;display:block}
+.article-body h2{font-family:"Cormorant Garamond",serif;font-size:1.55rem;font-weight:700;color:var(--t);margin-top:2.6rem;margin-bottom:1rem}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--t);margin-top:1.8rem;margin-bottom:.7rem}
+.article-body p{font-size:.95rem;line-height:2;color:var(--t2);margin-bottom:1.3rem}
+.article-body ul,.article-body ol{padding-right:1.4rem;margin-bottom:1.3rem}
+.article-body li{margin-bottom:.7rem;font-size:.93rem;line-height:1.9;color:var(--t2)}
+.article-body strong{color:var(--t);font-weight:700}
+.article-lede{font-size:1.05rem;line-height:1.95;color:var(--t2);margin-bottom:1.8rem;padding-bottom:1.8rem;border-bottom:1px solid var(--bd)}
+.article-cta-box{background:var(--gpale);border:1px solid var(--bd);border-radius:14px;padding:2rem;margin-top:3rem;text-align:center}
+.article-cta-box h4{font-family:"Cormorant Garamond",serif;font-size:1.3rem;color:var(--t);margin-bottom:.6rem}
+.article-cta-box p{font-size:.86rem;color:var(--t3);margin-bottom:1.2rem}
+.article-note{background:var(--off);border-right:3px solid var(--gold);border-radius:8px;padding:1.2rem 1.4rem;margin:1.8rem 0;font-size:.86rem;color:var(--t3);line-height:1.85}
+@media(max-width:1100px){.article-wrap{padding:2.5rem 1.5rem}}
+
 /* Client logo cards */
 .cl-card{padding:1rem 1.2rem}
 .cl-logo-wrap{width:52px;height:52px;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:6px;flex-shrink:0;overflow:hidden}
@@ -392,7 +411,7 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:right}
   <div class="sl">أحدث المقالات</div>
   <h2 class="st">رؤى وأفكار لتطوير أعمالك</h2>
   <div class="gline"></div>
-  <div class="blog-grid"><div class="bl-card reveal"><img class="bl-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop" alt="دليل الحصول على رخصة الاستثمار الأجنبي MISA في السعودية" width="600" height="400" loading="lazy" decoding="async"><div class="bl-body"><div class="bl-cat">الاستثمار الأجنبي</div><h3>كيف تحصل على رخصة MISA في 15 يوماً؟</h3><p>دليل شامل لخطوات الحصول على رخصة الاستثمار الأجنبي من وزارة الاستثمار السعودية.</p><div class="bl-footer"><span class="bl-date">يناير 2025</span><a href="/blog/" class="bl-link">اقرأ المزيد ←</a></div></div></div><div class="bl-card reveal" style="transition-delay:0.1s"><img class="bl-img" src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80&auto=format&fit=crop" alt="مقارنة أفضل أنظمة ERP للشركات السعودية" width="600" height="400" loading="lazy" decoding="async"><div class="bl-body"><div class="bl-cat">التحول الرقمي</div><h3>أفضل أنظمة ERP للشركات السعودية في 2025</h3><p>مقارنة شاملة بين أبرز أنظمة ERP المتوافقة مع متطلبات هيئة الزكاة والضريبة.</p><div class="bl-footer"><span class="bl-date">فبراير 2025</span><a href="/blog/" class="bl-link">اقرأ المزيد ←</a></div></div></div><div class="bl-card reveal" style="transition-delay:0.2s"><img class="bl-img" src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80&auto=format&fit=crop" alt="خطوات تأسيس شركة في المملكة العربية السعودية" width="600" height="400" loading="lazy" decoding="async"><div class="bl-body"><div class="bl-cat">الشركات الناشئة</div><h3>رحلة تأسيس شركتك في المملكة خطوة بخطوة</h3><p>من فكرة المشروع إلى السجل التجاري والتراخيص — دليلك الكامل لعام 2025.</p><div class="bl-footer"><span class="bl-date">مارس 2025</span><a href="/blog/" class="bl-link">اقرأ المزيد ←</a></div></div></div></div>
+  <div class="blog-grid"><a class="bl-card reveal" href="/blog/misa-investment-registration/"><img class="bl-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop" alt="دليل التسجيل الاستثماري لدى وزارة الاستثمار MISA في السعودية" width="600" height="400" loading="lazy" decoding="async"><div class="bl-body"><div class="bl-cat">الاستثمار الأجنبي</div><h3>التسجيل الاستثماري في MISA: الدليل الشامل لرخصة الاستثمار الأجنبي</h3><p>ما تغيّر في نظام ترخيص الاستثمار الأجنبي بالسعودية، وخطوات التسجيل الاستثماري لدى MISA بالتفصيل.</p><div class="bl-footer"><span class="bl-date">سبتمبر 2026</span><span class="bl-link">اقرأ المزيد ←</span></div></div></a><a class="bl-card reveal" href="/blog/erp-zatca-compliance-guide/" style="transition-delay:0.1s"><img class="bl-img" src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80&auto=format&fit=crop" alt="معايير اختيار نظام ERP متوافق مع متطلبات زاتكا للفوترة الإلكترونية" width="600" height="400" loading="lazy" decoding="async"><div class="bl-body"><div class="bl-cat">التحول الرقمي</div><h3>كيف تختار نظام ERP متوافقاً مع متطلبات زاتكا؟</h3><p>معايير عملية لاختيار وتطبيق نظام ERP يراعي متطلبات الفوترة الإلكترونية بمرحلتيها.</p><div class="bl-footer"><span class="bl-date">سبتمبر 2026</span><span class="bl-link">اقرأ المزيد ←</span></div></div></a><a class="bl-card reveal" href="/blog/company-formation-steps-saudi/" style="transition-delay:0.2s"><img class="bl-img" src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80&auto=format&fit=crop" alt="خطوات تأسيس شركة والحصول على السجل التجاري في المملكة العربية السعودية" width="600" height="400" loading="lazy" decoding="async"><div class="bl-body"><div class="bl-cat">الشركات الناشئة</div><h3>دليلك الشامل لتأسيس شركة في السعودية خطوة بخطوة</h3><p>من اختيار الشكل القانوني إلى إصدار السجل التجاري الموحد عبر منصة الأعمال، والتزاماتك بعد التأسيس.</p><div class="bl-footer"><span class="bl-date">سبتمبر 2026</span><span class="bl-link">اقرأ المزيد ←</span></div></div></a></div>
 </section>
 <div class="cta">
   <h2>لديك سؤال <em>لم تجد له إجابة</em>؟</h2>
