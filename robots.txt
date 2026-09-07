@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://itqanbs.sa/sitemap.xml
+Sitemap: https://www.itqanbs.sa/sitemap.xml
