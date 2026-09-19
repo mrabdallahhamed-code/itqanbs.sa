@@ -351,3 +351,15 @@ img{max-width:100%}
 .svc-card.soon{border-style:dashed;cursor:default}
 .svc-card.soon:hover{transform:none;box-shadow:none}
 .svc-card h3 .en{display:block;font-size:.75rem;font-weight:400;opacity:.6;margin-top:.3rem;line-height:1.6}
+
+/* hero stats spacing (RTL) */
+.hero-stats{gap:1.5rem;flex-wrap:wrap}
+.hero-stats .hs{margin:0;padding:0;border:none}
+.hero-stats .hs+.hs{border-right:1px solid rgba(255,255,255,.12);padding-right:1.5rem}
+.hs-l{white-space:nowrap}
+@media(max-width:640px){
+.hero-stats{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;gap:1rem}
+.hero-stats .hs+.hs{border-right:none;padding-right:0}
+.hs-n{font-size:1.8rem}
+.hs-l{font-size:.68rem;white-space:normal}
+}
