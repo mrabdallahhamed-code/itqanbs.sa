@@ -343,3 +343,11 @@ img{max-width:100%}
 .about-badge-wrap{right:.5rem}
 }
 .hero{padding:0}
+
+/* platforms page */
+.svc-grid.two{grid-template-columns:repeat(2,1fr)}
+@media(max-width:640px){.svc-grid.two{grid-template-columns:1fr}}
+.svc-tag{display:inline-block;align-self:flex-start;font-size:.72rem;font-weight:700;padding:.2rem .75rem;border-radius:999px;background:var(--gpale);color:var(--g);margin-bottom:.8rem}
+.svc-card.soon{border-style:dashed;cursor:default}
+.svc-card.soon:hover{transform:none;box-shadow:none}
+.svc-card h3 .en{display:block;font-size:.75rem;font-weight:400;opacity:.6;margin-top:.3rem;line-height:1.6}
