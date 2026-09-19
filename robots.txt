@@ -1,4 +1,26 @@
 User-agent: *
 Allow: /
 
+# محركات البحث ومساعدات الذكاء الاصطناعي: مسموح لها بقراءة المحتوى العام
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://www.itqanbs.sa/sitemap.xml
