@@ -363,3 +363,5 @@ img{max-width:100%}
 .hs-n{font-size:1.8rem}
 .hs-l{font-size:.68rem;white-space:normal}
 }
+
+.article-body a{color:var(--g3);font-weight:700}
