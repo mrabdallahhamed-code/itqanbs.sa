@@ -129,7 +129,7 @@
         <a href="https://wa.me/966569051686?text=مرحباً، لست متأكداً من الخدمة المناسبة لي، هل يمكنكم مساعدتي؟" target="_blank" rel="noopener" class="bp" style="display:inline-block">أحتاج مساعدة في تحديد احتياجي</a>
       </div>
     </div>
-    <form class="cform" id="contactForm" action="mailto:info@itqanbs.sa" method="POST" enctype="text/plain" onsubmit="handleSubmit(event)">
+    <form class="cform" id="contactForm" action="https://formspree.io/f/myezkyqd" method="POST" onsubmit="handleSubmit(event)">
       <div class="cf-title">نموذج التواصل</div>
       <div class="frow">
         <div class="fg"><label for="cf-name">الاسم</label><input id="cf-name" name="name" type="text" placeholder="محمد العتيبي" required></div>
@@ -230,11 +230,7 @@ function handleSubmit(e){
     .catch(()=>{show("تعذّر إرسال النموذج. "+fallback,false);})
     .finally(()=>{btn.disabled=false;btn.textContent=orig;});
 }
-<<<<<<< HEAD
 const FORM_ENDPOINT="https://formspree.io/f/myezkyqd";
-=======
-const FORM_ENDPOINT="";/* "https://formspree.io/f/myezkyqd" Formspree بعد إنشاء النموذج، مثال: https://formspree.io/f/xxxxxxxx */
->>>>>>> 7fec1cc1cf6720d101dd6da21d916a6cb5060167
 const WA_NUMBER="966569051686";
 </script>
 <script data-gabster-widget src="https://widget.gabster.ai/loader?cbid=6aa5ca4412f592505d0649dd" data-embed-type="widget"></script>
