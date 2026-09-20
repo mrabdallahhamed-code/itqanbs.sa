@@ -365,3 +365,6 @@ img{max-width:100%}
 }
 
 .article-body a{color:var(--g3);font-weight:700}
+
+.svc-ico.logo{width:auto;height:auto;background:none;border-radius:0;justify-content:flex-start;margin-bottom:1rem}.svc-ico.logo img{height:84px;width:auto;display:block}
+.svc-ico.logo.tall img{height:116px}
