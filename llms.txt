@@ -37,3 +37,6 @@
 - الهاتف/واتساب: +966 56 905 1686
 - البريد: info@itqanbs.sa
 - العنوان: العليا فيو، حي العليا، الرياض
+
+## English
+An English version of this site is available at https://www.itqanbs.sa/en/, mirroring every page above under the /en/ path (e.g. /en/services/formation/, /en/about/, /en/blog/).
