@@ -273,6 +273,31 @@ nav,section,.clients-sec,.cta,footer{padding-left:2rem;padding-right:2rem}
 .why-card h4{font-size:.86rem;font-weight:700;color:var(--t);line-height:1.5}
 @media(max-width:1100px){.why-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.why-grid{grid-template-columns:1fr}}
+.platforms-block{margin-top:4.5rem;padding-top:3.5rem;border-top:1px solid var(--bd)}
+.pb-title{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:700;color:var(--t);margin-bottom:.5rem}
+.pb-sub{font-size:.88rem;color:var(--t3);max-width:560px;line-height:1.85;margin-bottom:2rem}
+.platform-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.platform-card{background:var(--gtint);border:1px solid var(--bd);border-radius:14px;padding:1.7rem 1.5rem;transition:all .3s;text-decoration:none;display:flex;flex-direction:column}
+.platform-card:not(.platform-soon):hover{border-color:var(--gold);box-shadow:var(--sh);transform:translateY(-4px)}
+.pf-ico{width:46px;height:46px;background:var(--w);border:1px solid var(--bd);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1rem}
+.platform-card h4{font-size:.95rem;font-weight:700;color:var(--t);margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+.platform-card p{font-size:.78rem;color:var(--t3);line-height:1.75;flex-grow:1;margin-bottom:.9rem}
+.pf-link{font-size:.75rem;font-weight:700;color:var(--g3);direction:ltr;text-align:right}
+.pf-badge{font-size:.6rem;font-weight:700;color:var(--gold);background:var(--gpale);padding:.2rem .5rem;border-radius:100px;letter-spacing:normal}
+.platform-soon{opacity:.72;cursor:default}
+@media(max-width:1100px){.platform-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.platform-grid{grid-template-columns:1fr}}
+.pages-hub{background:var(--g);position:relative;overflow:hidden}
+.pages-hub::before{content:"";position:absolute;top:-80px;left:-80px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(184,146,42,.1) 0%,transparent 70%)}
+.pages-hub .sl{color:var(--gold2)}.pages-hub .sl::before{background:var(--gold2)}
+.pages-hub .st{color:var(--w)}
+.hub-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;margin-top:3rem;position:relative;z-index:1}
+.hub-btn{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:1.6rem 1rem;text-align:center;text-decoration:none;transition:all .25s;display:flex;flex-direction:column;align-items:center;gap:.7rem}
+.hub-btn:hover{background:rgba(184,146,42,.16);border-color:rgba(184,146,42,.4);transform:translateY(-3px)}
+.hub-ico{font-size:1.5rem}
+.hub-btn span:last-child{font-size:.84rem;font-weight:700;color:var(--w)}
+@media(max-width:1100px){.hub-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.hub-grid{grid-template-columns:repeat(2,1fr)}}
 
 /* Services hub */
 .services-sec{background:var(--off)}
@@ -438,6 +463,7 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:right}
   <div class="sl">لماذا إتقان</div>
   <h2 class="st">لأنك لا تحتاج إلى مقدم خدمة آخر… تحتاج إلى شريك يفهم الصورة كاملة</h2>
   <div class="gline"></div>
+  <p class="sd">إتقان لخدمات الأعمال شريك واحد لاحتياجات منشأتك المتعددة في السعودية — من التأسيس والاستشارات إلى الموارد البشرية والمحاسبة والتحول الرقمي، وصولاً إلى منصاتنا الرقمية المتخصصة التي نبنيها لنفس الغاية.</p>
   <div class="why-grid">
     <div class="why-card reveal"><div class="why-ico">🤝</div><h4>شريك واحد لاحتياجات متعددة</h4></div>
     <div class="why-card reveal" style="transition-delay:.06s"><div class="why-ico">⚙️</div><h4>حلول عملية قابلة للتنفيذ</h4></div>
@@ -445,60 +471,47 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:right}
     <div class="why-card reveal" style="transition-delay:.18s"><div class="why-ico">📈</div><h4>حلول تناسب مرحلة منشأتك</h4></div>
     <div class="why-card reveal" style="transition-delay:.24s"><div class="why-ico">🔄</div><h4>شراكة مستمرة وليست خدمة مؤقتة</h4></div>
   </div>
-</section>
-<section class="services-sec" id="services">
-  <div class="sl">خدماتنا</div>
-  <h2 class="st">حلول تغطي احتياج منشأتك بالكامل</h2>
-  <div class="gline"></div>
-  <p class="sd">من التشغيل اليومي إلى النمو والتوسع، نقدم كل ما تحتاجه منشأتك تحت مظلة واحدة.</p>
-  <div class="svc-grid"><a class="svc-card reveal" href="/services/hr/"><div class="svc-ico">🤝</div><h3>الموارد البشرية</h3><p>التشغيل، التوظيف، السياسات والإجراءات، الهياكل التنظيمية وإدارة الأداء.</p><span class="svc-more">اعرف المزيد ←</span></a><a class="svc-card reveal" href="/services/accounting/" style="transition-delay:0.06s"><div class="svc-ico">📊</div><h3>المحاسبة والمالية</h3><p>الحسابات، التقارير المالية، الزكاة والضريبة، التحليل المالي وتنظيم الدورة المستندية.</p><span class="svc-more">اعرف المزيد ←</span></a><a class="svc-card reveal" href="/services/marketing/" style="transition-delay:0.12s"><div class="svc-ico">📈</div><h3>التسويق ونمو الأعمال</h3><p>حلول التسويق الإلكتروني وتطوير المبيعات والأعمال والاستراتيجيات التسويقية لتحقيق النمو.</p><span class="svc-more">اعرف المزيد ←</span></a><a class="svc-card reveal" href="/services/erp/" style="transition-delay:0.18s"><div class="svc-ico">💻</div><h3>ERP والتحول الرقمي</h3><p>حلول ERP والتحول الرقمي وأتمتة العمليات وربط الأنظمة لرفع الكفاءة.</p><span class="svc-more">اعرف المزيد ←</span></a><a class="svc-card reveal" href="/services/consulting/" style="transition-delay:0.24s"><div class="svc-ico">🧭</div><h3>الاستشارات وتطوير الأعمال</h3><p>استشارات تطوير الأعمال وإعادة الهيكلة ودراسات الجدوى والتخطيط الاستراتيجي.</p><span class="svc-more">اعرف المزيد ←</span></a><a class="svc-card reveal" href="/services/finance/" style="transition-delay:0.30s"><div class="svc-ico">💰</div><h3>التمويل والدعم</h3><p>تقييم الجاهزية وتجهيز الملفات والدراسات والوصول إلى فرص التمويل وبرامج الدعم.</p><span class="svc-more">اعرف المزيد ←</span></a></div>
-  <div style="margin-top:2.5rem"><a href="/services/" class="bp" style="display:inline-block">استكشف جميع الخدمات ←</a></div>
-</section>
-<section class="needs" id="needs">
-  <div class="sl">ماذا تحتاج منشأتك؟</div>
-  <h2 class="st">ابدأ من احتياجك، لا من قائمة الخدمات</h2>
-  <div class="gline"></div>
-  <p class="sd">اختر ما يشغلك الآن وسنوجهك للحل المناسب مباشرة.</p>
-  <div class="needs-grid">
-    <a class="need-btn" href="/services/marketing/"><span class="need-ico">📈</span><span>زيادة المبيعات</span></a>
-    <a class="need-btn" href="/services/accounting/"><span class="need-ico">💰</span><span>خفض التكاليف</span></a>
-    <a class="need-btn" href="/services/consulting/"><span class="need-ico">🗂️</span><span>تنظيم الأعمال</span></a>
-    <a class="need-btn" href="/services/finance/"><span class="need-ico">🏦</span><span>التمويل</span></a>
-    <a class="need-btn" href="/services/erp/"><span class="need-ico">💻</span><span>التحول الرقمي</span></a>
+  <div class="platforms-block">
+    <h3 class="pb-title">منصاتنا الرقمية</h3>
+    <p class="pb-sub">إلى جانب خدماتنا الاستشارية والتشغيلية، طوّرنا منصات رقمية متخصصة تخدم كل مرحلة من رحلة منشأتك.</p>
+    <div class="platform-grid">
+      <a class="platform-card reveal" href="https://start.itqanbs.sa" target="_blank" rel="noopener">
+        <div class="pf-ico">🏗️</div>
+        <h4>مبتدأ من إتقان</h4>
+        <p>منصة تأسيس الشركات والاستثمار الأجنبي في السعودية، من التسجيل حتى التشغيل، وتشمل إضافة "صمام" لمتابعة ما بعد التأسيس.</p>
+        <span class="pf-link">start.itqanbs.sa ↗</span>
+      </a>
+      <a class="platform-card reveal" style="transition-delay:.06s" href="https://hwkm.net" target="_blank" rel="noopener">
+        <div class="pf-ico">🏛️</div>
+        <h4>حوكم</h4>
+        <p>منصة حوكمة الشركات: الجمعيات العامة، التصويت والتوقيع الإلكتروني، وسجلات القرارات والامتثال.</p>
+        <span class="pf-link">hwkm.net ↗</span>
+      </a>
+      <a class="platform-card reveal" style="transition-delay:.12s" href="https://store.itqanbs.sa" target="_blank" rel="noopener">
+        <div class="pf-ico">🛒</div>
+        <h4>متجر إتقان</h4>
+        <p>متجر دراسات الجدوى والاستشارات المتخصصة، تطلب ما تحتاجه مباشرة وتُسعَّر حسب طلبك.</p>
+        <span class="pf-link">store.itqanbs.sa ↗</span>
+      </a>
+      <div class="platform-card platform-soon reveal" style="transition-delay:.18s">
+        <div class="pf-ico">🧮</div>
+        <h4>محور إتقان <span class="pf-badge">قريباً</span></h4>
+        <p>نظام ERP سعودي متكامل نبنيه لإدارة الموارد والعمليات، بديلاً محلياً للأنظمة العالمية.</p>
+      </div>
+    </div>
   </div>
 </section>
-<section class="sectors" id="sectors">
-  <div class="sl">قطاعاتنا</div>
-  <h2 class="st">نخدمك أياً كان نوع قطاعك</h2>
+<section class="pages-hub" id="pages">
+  <div class="sl">استكشف إتقان</div>
+  <h2 class="st">اختر الصفحة التي تهمك</h2>
   <div class="gline"></div>
-  <p class="sd">نمتلك خبرة متخصصة بحسب طبيعة نشاطك، نفهم تحدياته ونقدم الحلول المناسبة لكل قطاع.</p>
-  <div class="sectors-grid"><div class="sec-card reveal"><img class="sec-img" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80&auto=format&fit=crop" alt="خدمات القطاع الصناعي والمصانع في السعودية" width="800" height="600" loading="lazy" decoding="async"><div class="sec-ov"></div><div class="sec-content"><span class="sec-ico">🏭</span><h3>القطاع الصناعي</h3><p>حلول متكاملة للمصانع والمنشآت الصناعية تشمل الإدارة والامتثال والتطوير التشغيلي.</p><span class="sec-tag">Manufacturing</span></div></div><div class="sec-card reveal" style="transition-delay:0.08s"><img class="sec-img" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80&auto=format&fit=crop" alt="خدمات القطاع التجاري وتراخيص المتاجر في السعودية" width="800" height="600" loading="lazy" decoding="async"><div class="sec-ov"></div><div class="sec-content"><span class="sec-ico">🏪</span><h3>القطاع التجاري</h3><p>دعم الشركات التجارية في التسجيل والتراخيص وإدارة العمليات اليومية بكفاءة عالية.</p><span class="sec-tag">Commerce</span></div></div><div class="sec-card reveal" style="transition-delay:0.16s"><img class="sec-img" src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80&auto=format&fit=crop" alt="دعم تأسيس الشركات الناشئة في السعودية" width="800" height="600" loading="lazy" decoding="async"><div class="sec-ov"></div><div class="sec-content"><span class="sec-ico">🚀</span><h3>الشركات الناشئة</h3><p>نرافق رواد الأعمال من الفكرة إلى التأسيس والنمو المستدام في بيئة الأعمال السعودية.</p><span class="sec-tag">Startups</span></div></div></div>
-  <div style="margin-top:2.5rem"><a href="/sectors/" class="bs" style="display:inline-block;border-color:var(--bd);color:var(--g)">استعرض جميع القطاعات ←</a></div>
-</section>
-<section class="process" id="process">
-  <div class="sl">كيف نعمل معك؟</div>
-  <h2 class="st">أربع خطوات واضحة من أول تواصل إلى نتائج ملموسة</h2>
-  <div class="gline"></div>
-  <div class="process-grid">
-    <div class="step reveal"><div class="step-n">01</div><h4>نفهم احتياجك</h4><p>نستمع لتحدياتك الفعلية قبل أن نقترح أي حل.</p></div>
-    <div class="step reveal" style="transition-delay:.08s"><div class="step-n">02</div><h4>نصمم الحل</h4><p>نبني خطة عمل واضحة تناسب حجم منشأتك ومرحلتها.</p></div>
-    <div class="step reveal" style="transition-delay:.16s"><div class="step-n">03</div><h4>نبدأ التنفيذ</h4><p>ننتقل من التوصية إلى التنفيذ الفعلي على الأرض.</p></div>
-    <div class="step reveal" style="transition-delay:.24s"><div class="step-n">04</div><h4>نتابع وندعم</h4><p>شراكة مستمرة، لا نغيب بعد تسليم أول نتيجة.</p></div>
-  </div>
-</section>
-<section class="clients-sec" id="clients">
-  <div class="sl">عملاؤنا</div>
-  <h2 class="st">شركات وثقت بنا وحققنا معاً النجاح</h2>
-  <div class="gline"></div>
-  <div class="clients-grid"><div class="cl-card reveal"><div class="cl-logo-wrap"><img src="/assets/clients/rheoserve.png" alt="شركة ريوسيرف اندستريال سوليوشنز" loading="lazy"></div><div><div class="cl-name">شركة ريوسيرف اندستريال سوليوشنز</div><div class="cl-type">قطاع صناعي</div></div></div><div class="cl-card reveal" style="transition-delay:0.06s"><div class="cl-logo-wrap"><img src="/assets/clients/aswar.png" alt="شركة أسوار المتحدة القابضة" loading="lazy"></div><div><div class="cl-name">شركة أسوار المتحدة القابضة</div><div class="cl-type">قطاع استثماري</div></div></div><div class="cl-card reveal" style="transition-delay:0.12s"><div class="cl-logo-wrap"><img src="/assets/clients/nsr-event.png" alt="شركة ركاز نجد" loading="lazy"></div><div><div class="cl-name">شركة ركاز نجد</div><div class="cl-type">قطاع تجاري</div></div></div><div class="cl-card reveal" style="transition-delay:0.00s"><div class="cl-logo-wrap"><img src="/assets/clients/anfas-care.png" alt="شركة أنفاس العناية" loading="lazy"></div><div><div class="cl-name">شركة أنفاس العناية</div><div class="cl-type">قطاع خدمات</div></div></div><div class="cl-card reveal" style="transition-delay:0.06s"><div class="cl-logo-wrap"><img src="/assets/clients/nuqwa.png" alt="شركة نقوة للاستقدام" loading="lazy"></div><div><div class="cl-name">شركة نقوة للاستقدام</div><div class="cl-type">موارد بشرية</div></div></div><div class="cl-card reveal" style="transition-delay:0.12s"><div class="cl-logo-wrap"><img src="/assets/clients/elite-allies-law.png" alt="مكتب حلفاء النخبة للمحاماة" loading="lazy"></div><div><div class="cl-name">مكتب حلفاء النخبة للمحاماة</div><div class="cl-type">استشارات قانونية</div></div></div></div>
-  <div style="margin-top:2.5rem"><a href="/success-stories/" class="bo" style="display:inline-block">شاهد جميع قصص النجاح ←</a></div>
-</section>
-<section class="stats">
-  <div class="stats-grid">
-    <div class="stat"><div class="stat-n">+9</div><div class="stat-l">شركات خدمناها</div></div>
-    <div class="stat"><div class="stat-n">6</div><div class="stat-l">قطاعات متخصصة</div></div>
-    <div class="stat"><div class="stat-n">6</div><div class="stat-l">حلول رئيسية</div></div>
-    <div class="stat"><div class="stat-n">100%</div><div class="stat-l">التزام بالجودة</div></div>
+  <div class="hub-grid">
+    <a class="hub-btn" href="/services/"><span class="hub-ico">🧭</span><span>خدماتنا</span></a>
+    <a class="hub-btn" href="/sectors/"><span class="hub-ico">🏢</span><span>قطاعاتنا</span></a>
+    <a class="hub-btn" href="/success-stories/"><span class="hub-ico">🏆</span><span>قصص النجاح</span></a>
+    <a class="hub-btn" href="/blog/"><span class="hub-ico">📰</span><span>المدونة</span></a>
+    <a class="hub-btn" href="/about/"><span class="hub-ico">🏛️</span><span>من نحن</span></a>
+    <a class="hub-btn" href="/contact/"><span class="hub-ico">💬</span><span>تواصل معنا</span></a>
   </div>
 </section>
 <section class="faq" id="faq">
