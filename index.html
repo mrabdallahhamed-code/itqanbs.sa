@@ -274,9 +274,10 @@ nav,section,.clients-sec,.cta,footer{padding-left:2rem;padding-right:2rem}
 /* Why-us */
 .why{background:var(--w)}
 .why-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.2rem;margin-top:3rem}
-.why-card{background:var(--off);border:1px solid var(--bd);border-radius:12px;padding:1.8rem 1.4rem;transition:all .3s;text-align:center}
+.why-card{background:var(--off);border:1px solid var(--bd);border-top:3px solid transparent;border-radius:12px;padding:2rem 1.4rem;transition:all .3s;text-align:center}
+.why-card:hover{border-top-color:var(--gold2);transform:translateY(-4px);box-shadow:var(--sh)}
 .why-card:hover{border-color:rgba(30,58,47,.22);box-shadow:var(--sh);transform:translateY(-4px)}
-.why-ico{width:48px;height:48px;margin:0 auto .9rem;background:var(--gpale);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--g)}
+.why-ico{width:62px;height:62px;margin:0 auto 1.1rem;background:var(--w);border:1.5px solid var(--gold3);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--g);box-shadow:0 0 0 5px var(--gpale)}
 .why-card h4{font-size:.86rem;font-weight:700;color:var(--t);line-height:1.5}
 @media(max-width:1100px){.why-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.why-grid{grid-template-columns:1fr}}
@@ -296,17 +297,6 @@ nav,section,.clients-sec,.cta,footer{padding-left:2rem;padding-right:2rem}
 .platform-soon{opacity:.72;cursor:default}
 @media(max-width:1100px){.platform-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.platform-grid{grid-template-columns:1fr}}
-.pages-hub{background:var(--g);position:relative;overflow:hidden}
-.pages-hub::before{content:"";position:absolute;top:-80px;left:-80px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(184,146,42,.1) 0%,transparent 70%)}
-.pages-hub .sl{color:var(--gold2)}.pages-hub .sl::before{background:var(--gold2)}
-.pages-hub .st{color:var(--w)}
-.hub-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;margin-top:3rem;position:relative;z-index:1}
-.hub-btn{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:1.6rem 1rem;text-align:center;text-decoration:none;transition:all .25s;display:flex;flex-direction:column;align-items:center;gap:.7rem}
-.hub-btn:hover{background:rgba(184,146,42,.16);border-color:rgba(184,146,42,.4);transform:translateY(-3px)}
-.hub-ico{display:inline-flex;color:var(--gold2)}
-.hub-btn span:last-child{font-size:.84rem;font-weight:700;color:var(--w)}
-@media(max-width:1100px){.hub-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:640px){.hub-grid{grid-template-columns:repeat(2,1fr)}}
 
 /* Services hub */
 .services-sec{background:var(--off)}
@@ -453,7 +443,7 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:right}
 <section class="hero" id="home">
   <div class="hero-l">
     <div class="eyebrow"><span class="pulse"></span>معكم من الفكرة حتى التشغيل والنمو</div>
-    <h1>شريكك الواحد لتأسيس وتشغيل<br>أعمالك في السعودية</h1>
+    <h1>تأسيس شركتك وتشغيلها<br>بثقة في السعودية</h1>
     <p>إتقان لخدمات الأعمال — شريكك الواحد لاحتياجات متعددة: الموارد البشرية، المحاسبة والمالية، التسويق، ERP والتحول الرقمي، الاستشارات والتمويل، لكل مراحل نمو منشأتك في المملكة العربية السعودية.</p>
     <div class="hero-acts"><a href="/services/" class="bp">اكتشف خدماتنا</a><a href="https://wa.me/966569051686?text=مرحباً، أرغب بالاستفسار عن خدماتكم" target="_blank" rel="noopener" class="bs">تواصل معنا</a></div>
     <div class="hero-stats">
@@ -488,15 +478,15 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:right}
 </section>
 <section class="why" id="why">
   <div class="sl">لماذا إتقان</div>
-  <h2 class="st">لأنك لا تحتاج إلى مقدم خدمة آخر… تحتاج إلى شريك يفهم الصورة كاملة</h2>
+  <h2 class="st">شريك واحد يفهم أعمالك من الفكرة حتى التشغيل والنمو</h2>
   <div class="gline"></div>
   <p class="sd">نرافق منشأتك من الفكرة الأولى وحتى التشغيل والنمو — من التأسيس إلى الموارد البشرية والمحاسبة والتحول الرقمي، وصولاً إلى منصاتنا الرقمية المتخصصة التي نبنيها لنفس الغاية.</p>
   <div class="why-grid">
-    <div class="why-card reveal"><div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V11a2 2 0 0 1 2-2h2V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v9"/><path d="M4 20h16M10 20v-5h4v5"/></svg></div><h4>شريك واحد لاحتياجات متعددة</h4></div>
-    <div class="why-card reveal" style="transition-delay:.06s"><div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 18V9m8 9V5m8 13v-6"/><path d="M2 18h20"/></svg></div><h4>حلول عملية قابلة للتنفيذ</h4></div>
-    <div class="why-card reveal" style="transition-delay:.12s"><div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2.5"/></svg></div><h4>خبرات متعددة تحت مظلة واحدة</h4></div>
-    <div class="why-card reveal" style="transition-delay:.18s"><div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l5-5 4 4 8-9"/><path d="M15 7h5v5"/></svg></div><h4>معك من الفكرة حتى التشغيل والنمو</h4></div>
-    <div class="why-card reveal" style="transition-delay:.24s"><div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div><h4>شراكة مستمرة وليست خدمة مؤقتة</h4></div>
+    <div class="why-card reveal"><div class="why-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V11a2 2 0 0 1 2-2h2V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v9"/><path d="M4 20h16M10 20v-5h4v5"/></svg></div><h4>شريك واحد لاحتياجات متعددة</h4></div>
+    <div class="why-card reveal" style="transition-delay:.06s"><div class="why-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 18V9m8 9V5m8 13v-6"/><path d="M2 18h20"/></svg></div><h4>حلول عملية قابلة للتنفيذ</h4></div>
+    <div class="why-card reveal" style="transition-delay:.12s"><div class="why-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2.5"/></svg></div><h4>خبرات متعددة تحت مظلة واحدة</h4></div>
+    <div class="why-card reveal" style="transition-delay:.18s"><div class="why-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l5-5 4 4 8-9"/><path d="M15 7h5v5"/></svg></div><h4>معك من الفكرة حتى التشغيل والنمو</h4></div>
+    <div class="why-card reveal" style="transition-delay:.24s"><div class="why-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div><h4>شراكة مستمرة وليست خدمة مؤقتة</h4></div>
   </div>
   <div class="platforms-block">
     <h3 class="pb-title">منصاتنا الرقمية</h3>
@@ -526,19 +516,6 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:right}
         <p>نظام ERP سعودي متكامل نبنيه لإدارة الموارد والعمليات، بديلاً محلياً للأنظمة العالمية.</p>
       </div>
     </div>
-  </div>
-</section>
-<section class="pages-hub" id="pages">
-  <div class="sl">استكشف إتقان</div>
-  <h2 class="st">اختر الصفحة التي تهمك</h2>
-  <div class="gline"></div>
-  <div class="hub-grid">
-    <a class="hub-btn" href="/services/"><span class="hub-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><span>خدماتنا</span></a>
-    <a class="hub-btn" href="/sectors/"><span class="hub-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-6h6v6M9 11h.01M15 11h.01M9 15h.01M15 15h.01"/></svg></span><span>قطاعاتنا</span></a>
-    <a class="hub-btn" href="/success-stories/"><span class="hub-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5 7 21l5-3 5 3-1.5-8.5"/></svg></span><span>قصص النجاح</span></a>
-    <a class="hub-btn" href="/blog/"><span class="hub-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2h9l4 4v16H6z"/><path d="M15 2v4h4M9 13h6M9 17h6"/></svg></span><span>المدونة</span></a>
-    <a class="hub-btn" href="/about/"><span class="hub-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21h16M5 21V10M19 21V10M3 10l9-6 9 6M8 21v-5h8v5"/></svg></span><span>من نحن</span></a>
-    <a class="hub-btn" href="/contact/"><span class="hub-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span>تواصل معنا</span></a>
   </div>
 </section>
 <section class="clients-sec" id="clients">

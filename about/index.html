@@ -273,9 +273,9 @@ nav,section,.clients-sec,.cta,footer{padding-left:2rem;padding-right:2rem}
 /* Why-us */
 .why{background:var(--w)}
 .why-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.2rem;margin-top:3rem}
-.why-card{background:var(--off);border:1px solid var(--bd);border-radius:12px;padding:1.8rem 1.4rem;transition:all .3s;text-align:center}
-.why-card:hover{border-color:rgba(30,58,47,.22);box-shadow:var(--sh);transform:translateY(-4px)}
-.why-ico{width:48px;height:48px;margin:0 auto .9rem;background:var(--gpale);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--g)}
+.why-card{background:var(--off);border:1px solid var(--bd);border-top:3px solid transparent;border-radius:12px;padding:2rem 1.4rem;transition:all .3s;text-align:center}
+.why-card:hover{border-top-color:var(--gold2);transform:translateY(-4px);box-shadow:var(--sh)}
+.why-ico{width:62px;height:62px;margin:0 auto 1.1rem;background:var(--w);border:1.5px solid var(--gold3);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--g);box-shadow:0 0 0 5px var(--gpale)}
 .why-card h4{font-size:.86rem;font-weight:700;color:var(--t);line-height:1.5}
 @media(max-width:1100px){.why-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.why-grid{grid-template-columns:1fr}}
@@ -283,6 +283,11 @@ nav,section,.clients-sec,.cta,footer{padding-left:2rem;padding-right:2rem}
 /* Services hub */
 .services-sec{background:var(--off)}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.offer-cta{background:linear-gradient(135deg,var(--g) 0%,var(--g2) 60%,#142A1E 100%);padding:4.5rem 4rem}
+.offer-cta-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.offer-cta .bg{flex-shrink:0}
+.offer-cta .sl::before{background:var(--gold2)}
+@media(max-width:768px){.offer-cta{padding:3rem 1.5rem}.offer-cta-in{flex-direction:column;align-items:flex-start;text-align:right}}
 .svc-card{background:var(--w);border:1px solid var(--bd);border-radius:14px;padding:2rem 1.7rem;transition:all .3s;display:flex;flex-direction:column;text-decoration:none}
 .svc-card:hover{transform:translateY(-6px);box-shadow:var(--sh2);border-color:rgba(30,58,47,.2)}
 .svc-ico{width:52px;height:52px;background:var(--gpale);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--g);margin-bottom:1.2rem}
@@ -448,24 +453,26 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:right}
     <div class="af reveal" style="transition-delay:.16s"><div class="af-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3M12 18v3M4.2 7l2.6 1.5M17.2 15.5l2.6 1.5M4.2 17l2.6-1.5M17.2 8.5l2.6-1.5"/><circle cx="12" cy="12" r="4.5"/></svg></div><div><h4>قيمنا</h4><p>الأمانة • الإتقان • الشفافية • الالتزام • الابتكار • الشراكة الحقيقية.</p></div></div>
   </div>
 </section>
-<section class="services-sec" id="offer" style="background:var(--w)">
-  <div class="sl">ماذا نقدم؟</div>
-  <h2 class="st">حلول متكاملة تحت مظلة واحدة</h2>
-  <div class="gline"></div>
-  <div class="svc-grid">
-    <a class="svc-card reveal" href="/services/hr/"><div class="svc-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9" r="2.6"/><path d="M15.5 14c2.8.3 4.9 2.6 4.9 6"/></svg></div><h3>الموارد البشرية</h3><p>التشغيل، التوظيف، السياسات والإجراءات، الهياكل التنظيمية وإدارة الأداء.</p><span class="svc-more">اعرف المزيد ←</span></a><a class="svc-card reveal" href="/services/accounting/"><div class="svc-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>المحاسبة والمالية</h3><p>الحسابات، التقارير المالية، الزكاة والضريبة، التحليل المالي وتنظيم الدورة المستندية.</p><span class="svc-more">اعرف المزيد ←</span></a><a class="svc-card reveal" href="/services/marketing/"><div class="svc-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l5-5 4 4 8-9"/><path d="M15 7h5v5"/></svg></div><h3>التسويق ونمو الأعمال</h3><p>حلول التسويق الإلكتروني وتطوير المبيعات والأعمال والاستراتيجيات التسويقية لتحقيق النمو.</p><span class="svc-more">اعرف المزيد ←</span></a><a class="svc-card reveal" href="/services/erp/"><div class="svc-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div><h3>ERP والتحول الرقمي</h3><p>حلول ERP والتحول الرقمي وأتمتة العمليات وربط الأنظمة لرفع الكفاءة.</p><span class="svc-more">اعرف المزيد ←</span></a><a class="svc-card reveal" href="/services/consulting/"><div class="svc-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13 13l-4.5 2.5L11 11z"/></svg></div><h3>الاستشارات وتطوير الأعمال</h3><p>استشارات تطوير الأعمال وإعادة الهيكلة ودراسات الجدوى والتخطيط الاستراتيجي.</p><span class="svc-more">اعرف المزيد ←</span></a><a class="svc-card reveal" href="/services/finance/"><div class="svc-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2"/><circle cx="12" cy="13.5" r="2.5"/></svg></div><h3>التمويل والدعم</h3><p>تقييم الجاهزية وتجهيز الملفات والدراسات والوصول إلى فرص التمويل وبرامج الدعم.</p><span class="svc-more">اعرف المزيد ←</span></a>
+<section class="offer-cta reveal" id="offer">
+  <div class="offer-cta-in">
+    <div>
+      <div class="sl" style="color:var(--gold2)">ماذا نقدم؟</div>
+      <h2 class="st" style="color:var(--w)">ست خدمات متكاملة، تحت شريك واحد</h2>
+      <p style="color:rgba(255,255,255,.78);margin-top:.9rem;max-width:560px">من التأسيس إلى المحاسبة والموارد البشرية والتسويق وERP والتمويل — كل خدمة موضّحة بتفاصيلها الكاملة في صفحة خدماتنا.</p>
+    </div>
+    <a href="/services/" class="bg">استعرض خدماتنا ←</a>
   </div>
 </section>
 <section class="why" id="why-us">
   <div class="sl">لماذا نحن؟</div>
-  <h2 class="st">لأنك لا تحتاج إلى مقدم خدمة آخر… تحتاج إلى شريك يفهم الصورة كاملة</h2>
+  <h2 class="st">شريك واحد يفهم أعمالك من الفكرة حتى التشغيل والنمو</h2>
   <div class="gline"></div>
   <div class="why-grid">
-    <div class="why-card reveal"><div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V11a2 2 0 0 1 2-2h2V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v9"/><path d="M4 20h16M10 20v-5h4v5"/></svg></div><h4>شريك واحد لاحتياجات متعددة</h4></div>
-    <div class="why-card reveal" style="transition-delay:.06s"><div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 18V9m8 9V5m8 13v-6"/><path d="M2 18h20"/></svg></div><h4>حلول عملية قابلة للتنفيذ</h4></div>
-    <div class="why-card reveal" style="transition-delay:.12s"><div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2.5"/></svg></div><h4>خبرات متعددة تحت مظلة واحدة</h4></div>
-    <div class="why-card reveal" style="transition-delay:.18s"><div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l5-5 4 4 8-9"/><path d="M15 7h5v5"/></svg></div><h4>حلول تناسب مرحلة منشأتك</h4></div>
-    <div class="why-card reveal" style="transition-delay:.24s"><div class="why-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div><h4>شراكة مستمرة وليست خدمة مؤقتة</h4></div>
+    <div class="why-card reveal"><div class="why-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V11a2 2 0 0 1 2-2h2V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v9"/><path d="M4 20h16M10 20v-5h4v5"/></svg></div><h4>شريك واحد لاحتياجات متعددة</h4></div>
+    <div class="why-card reveal" style="transition-delay:.06s"><div class="why-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 18V9m8 9V5m8 13v-6"/><path d="M2 18h20"/></svg></div><h4>حلول عملية قابلة للتنفيذ</h4></div>
+    <div class="why-card reveal" style="transition-delay:.12s"><div class="why-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2.5"/></svg></div><h4>خبرات متعددة تحت مظلة واحدة</h4></div>
+    <div class="why-card reveal" style="transition-delay:.18s"><div class="why-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l5-5 4 4 8-9"/><path d="M15 7h5v5"/></svg></div><h4>حلول تناسب مرحلة منشأتك</h4></div>
+    <div class="why-card reveal" style="transition-delay:.24s"><div class="why-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div><h4>شراكة مستمرة وليست خدمة مؤقتة</h4></div>
   </div>
 </section>
 <section class="services-sec" id="who-serve">
