@@ -284,17 +284,20 @@ nav,section,.clients-sec,.cta,footer{padding-left:2rem;padding-right:2rem}
 .platforms-block{margin-top:4.5rem;padding-top:3.5rem;border-top:1px solid var(--bd)}
 .pb-title{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:700;color:var(--t);margin-bottom:.5rem}
 .pb-sub{font-size:.88rem;color:var(--t3);max-width:560px;line-height:1.85;margin-bottom:2rem}
-.platform-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
-.platform-card{background:var(--gtint);border:1px solid var(--bd);border-radius:14px;padding:1.7rem 1.5rem;transition:all .3s;text-decoration:none;display:flex;flex-direction:column}
-.platform-card:not(.platform-soon):hover{border-color:var(--gold);box-shadow:var(--sh);transform:translateY(-4px)}
-.pf-ico{width:46px;height:46px;background:var(--w);border:1px solid var(--bd);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--g);margin-bottom:1rem}
-.pf-ico-img{padding:6px}
+.platform-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.platform-card{background:var(--w);border:1px solid var(--bd);border-top:3px solid transparent;border-radius:16px;padding:1.9rem 1.6rem;transition:all .3s;text-decoration:none;display:flex;flex-direction:column;box-shadow:0 2px 10px rgba(30,58,47,.05);position:relative;overflow:hidden}
+.platform-card::before{content:"";position:absolute;top:-40px;left:-40px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,var(--gpale) 0%,transparent 70%);opacity:0;transition:opacity .3s}
+.platform-card:not(.platform-soon):hover{border-top-color:var(--gold2);box-shadow:var(--sh2);transform:translateY(-6px)}
+.platform-card:not(.platform-soon):hover::before{opacity:1}
+.pf-ico{width:54px;height:54px;background:linear-gradient(135deg,var(--gpale),var(--w));border:1px solid var(--gold3);border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--g);margin-bottom:1.2rem;position:relative;z-index:1}
+.pf-ico-img{padding:8px}
 .pf-ico-img img{width:100%;height:100%;object-fit:contain}
-.platform-card h4{font-size:.95rem;font-weight:700;color:var(--t);margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
-.platform-card p{font-size:.78rem;color:var(--t3);line-height:1.75;flex-grow:1;margin-bottom:.9rem}
-.pf-link{font-size:.75rem;font-weight:700;color:var(--g3);direction:ltr;text-align:right}
+.platform-card h4{font-size:.98rem;font-weight:700;color:var(--t);margin-bottom:.55rem;display:flex;align-items:center;gap:.5rem;position:relative;z-index:1}
+.platform-card p{font-size:.78rem;color:var(--t3);line-height:1.75;flex-grow:1;margin-bottom:1rem;position:relative;z-index:1}
+.pf-link{font-size:.76rem;font-weight:800;color:var(--g);direction:ltr;text-align:right;position:relative;z-index:1}
 .pf-badge{font-size:.6rem;font-weight:700;color:var(--gold);background:var(--gpale);padding:.2rem .5rem;border-radius:100px;letter-spacing:normal}
-.platform-soon{opacity:.72;cursor:default}
+.platform-soon{background:var(--gtint);box-shadow:none;opacity:.8;cursor:default}
+.platform-soon .pf-ico{background:var(--w);border-style:dashed}
 @media(max-width:1100px){.platform-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.platform-grid{grid-template-columns:1fr}}
 
