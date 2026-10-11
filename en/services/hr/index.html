@@ -1,194 +1,492 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HR Services for Companies and Businesses | Itqan</title>
-<meta content="Integrated HR solutions covering operations, hiring, policies and procedures, organisational structures and performance management." name="description"/>
-<meta content="index, follow, max-image-preview:large" name="robots"/>
-<meta content="Itqan Business Services" name="author"/>
-<link href="https://www.itqanbs.sa/en/services/hr/" rel="canonical"/>
-<meta content="#1E3A2F" name="theme-color"/>
-<link href="/favicon.ico" rel="icon" sizes="48x48"/>
-<link href="/assets/favicon-192.png" rel="icon" sizes="192x192" type="image/png"/>
-<link href="/assets/apple-touch-icon.png" rel="apple-touch-icon"/>
-<!-- Open Graph -->
-<meta content="website" property="og:type"/>
-<meta content="en_US" property="og:locale"/>
-<meta content="Itqan Business Services" property="og:site_name"/>
-<meta content="HR Services for Companies and Businesses | Itqan" property="og:title"/>
-<meta content="Integrated HR solutions covering operations, hiring, policies and procedures, organisational structures and performance management." property="og:description"/>
-<meta content="https://www.itqanbs.sa/en/services/hr/" property="og:url"/>
-<meta content="https://www.itqanbs.sa/assets/og-cover-en.jpg" property="og:image"/>
-<meta content="https://www.itqanbs.sa/assets/og-cover-en.jpg" property="og:image:secure_url"/>
-<meta content="image/jpeg" property="og:image:type"/>
-<meta content="1200" property="og:image:width"/>
-<meta content="630" property="og:image:height"/>
-<meta content="Itqan Business Services — Company Formation, Foreign Investment and Business Services" property="og:image:alt"/>
-<!-- Twitter -->
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="HR Services for Companies and Businesses | Itqan" name="twitter:title"/>
-<meta content="Integrated HR solutions covering operations, hiring, policies and procedures, organisational structures and performance management." name="twitter:description"/>
-<meta content="https://www.itqanbs.sa/assets/og-cover-en.jpg" name="twitter:image"/>
-<meta content="Itqan Business Services — Company Formation, Foreign Investment and Business Services" name="twitter:image:alt"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&amp;family=Tajawal:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet"/>
-<!-- بيانات منظمة Schema.org لتحسين الظهور في نتائج البحث المحلي -->
-<script type="application/ld+json">{
+<meta name="description" content="Integrated HR solutions covering operations, hiring, policies and procedures, organisational structures and performance management.">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="Itqan Business Services">
+<link rel="canonical" href="https://www.itqanbs.sa/en/services/hr/">
+<link rel="alternate" hreflang="ar" href="https://www.itqanbs.sa/services/hr/">
+<link rel="alternate" hreflang="en" href="https://www.itqanbs.sa/en/services/hr/">
+<link rel="alternate" hreflang="x-default" href="https://www.itqanbs.sa/services/hr/">
+<meta name="theme-color" content="#1E3A2F">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Itqan Business Services">
+<meta property="og:title" content="HR Services for Companies and Businesses | Itqan">
+<meta property="og:description" content="Integrated HR solutions covering operations, hiring, policies and procedures, organisational structures and performance management.">
+<meta property="og:url" content="https://www.itqanbs.sa/en/services/hr/">
+<meta property="og:image" content="https://www.itqanbs.sa/assets/og-cover.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HR Services for Companies and Businesses | Itqan">
+<meta name="twitter:description" content="Integrated HR solutions covering operations, hiring, policies and procedures, organisational structures and performance management.">
+<meta name="twitter:image" content="https://www.itqanbs.sa/assets/og-cover.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://www.itqanbs.sa/#organization",
-      "name": "Itqan Business Services",
-      "url": "https://www.itqanbs.sa/en/",
-      "logo": "https://www.itqanbs.sa/assets/logo.png",
-      "telephone": "+966569051686",
-      "areaServed": "SA"
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://www.itqanbs.sa/en/services/hr/#webpage",
-      "url": "https://www.itqanbs.sa/en/services/hr/",
-      "name": "HR Services for Companies and Businesses | Itqan",
-      "description": "Integrated HR solutions covering operations, hiring, policies and procedures, organisational structures and performance management.",
-      "inLanguage": "en",
-      "isPartOf": {
-        "@id": "https://www.itqanbs.sa/#website"
-      },
-      "about": {
-        "@id": "https://www.itqanbs.sa/#organization"
-      },
-      "breadcrumb": {
-        "@id": "https://www.itqanbs.sa/en/services/hr/#breadcrumb"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://www.itqanbs.sa/en/services/hr/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.itqanbs.sa/en/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Services",
-          "item": "https://www.itqanbs.sa/en/services/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Human Resources",
-          "item": "https://www.itqanbs.sa/en/services/hr/"
-        }
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://www.itqanbs.sa/en/services/hr/#service",
-      "name": "Human Resources",
-      "description": "Integrated HR solutions covering operations, hiring, policies and procedures, organisational structures and performance management.",
-      "serviceType": "الموارد البشرية",
-      "provider": {
-        "@id": "https://www.itqanbs.sa/#organization"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Saudi Arabia"
-      },
-      "url": "https://www.itqanbs.sa/en/services/hr/"
-    }
+  "@type": "ProfessionalService",
+  "name": "Itqan Business Services",
+  "alternateName": "إتقان لخدمات الأعمال",
+  "url": "https://www.itqanbs.sa/en/services/hr/",
+  "logo": "https://www.itqanbs.sa/assets/logo.png",
+  "image": "https://www.itqanbs.sa/assets/og-cover.jpg",
+  "telephone": "+966569051686",
+  "email": "info@itqanbs.sa",
+  "foundingDate": "2025-03",
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "Unified National Number",
+    "value": "7049388205"
+  },
+  "priceRange": "$$",
+  "areaServed": "SA",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Al Olaya View, Al Olaya District",
+    "addressLocality": "Riyadh",
+    "addressCountry": "SA"
+  },
+  "sameAs": [
+    "https://start.itqanbs.sa",
+    "https://www.instagram.com/itqan.business",
+    "https://x.com/infoitqanbs",
+    "https://www.linkedin.com/company/itqan-business-services",
+    "https://www.tiktok.com/@itqanbs",
+    "https://www.facebook.com/share/1HTgwCNa7R/"
   ]
-}</script>
-<link href="/assets/style.css?v=20260921b" rel="stylesheet"/>
-<link href="https://www.itqanbs.sa/services/hr/" hreflang="ar" rel="alternate"/><link href="https://www.itqanbs.sa/en/services/hr/" hreflang="en" rel="alternate"/><link href="https://www.itqanbs.sa/services/hr/" hreflang="x-default" rel="alternate"/></head>
+}
+</script>
+
+<style>
+
+
+:root{--g:#1E3A2F;--g2:#2A5240;--g3:#3A7A58;--gpale:#EAF2EE;--gtint:#F3F8F5;--gold:#B8922A;--gold2:#D4AF4E;--gold3:#F2D784;--w:#FFFFFF;--off:#F8FAF8;--t:#121E18;--t2:#2D4A38;--t3:#5A7A68;--bd:rgba(30,58,47,0.1);--sh:0 4px 32px rgba(30,58,47,0.08);--sh2:0 20px 60px rgba(30,58,47,0.14)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:"Tajawal",sans-serif;background:var(--w);color:var(--t);overflow-x:hidden}
+nav{position:fixed;top:0;right:0;left:0;z-index:300;height:74px;padding:0 4rem;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--bd);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 2px 20px rgba(30,58,47,0.1)}
+.logo{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+.logo img{height:48px;width:auto;object-fit:contain}
+.logo-txt .ln{font-size:.92rem;font-weight:800;color:var(--g)}
+.logo-txt .le{font-size:.56rem;color:var(--t3);letter-spacing:.15em;text-transform:uppercase;direction:ltr}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
+.nav-links a{color:var(--t2);text-decoration:none;font-size:.86rem;font-weight:500;transition:color .2s;position:relative}
+.nav-links a:not(.nb)::after{content:"";position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--gold);border-radius:2px;transition:width .3s}
+.nav-links a:not(.nb):hover{color:var(--g)}.nav-links a:not(.nb):hover::after{width:100%}
+.nb{padding:.5rem 1.4rem;background:var(--g);color:var(--w)!important;border-radius:6px;font-weight:700!important;transition:all .25s!important;box-shadow:0 4px 14px rgba(30,58,47,0.25)}
+.nb:hover{background:var(--g2)!important;transform:translateY(-1px)}.nb::after{display:none!important}
+.social-links{display:flex;gap:.7rem;margin-top:1.3rem}
+.social-links a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.75);transition:all .25s}
+.social-links a:hover{background:var(--gold);color:var(--g)}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;appearance:none}
+.ham span{width:24px;height:2px;background:var(--g);border-radius:2px}
+.ticker{background:var(--g);height:40px;display:flex;align-items:center;overflow:hidden;margin-top:74px}
+.ticker-track{display:flex;animation:tick 35s linear infinite;white-space:nowrap}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ti{display:inline-flex;align-items:center;gap:.5rem;padding:0 2rem;font-size:.76rem;font-weight:600;color:rgba(255,255,255,.85);letter-spacing:.06em;border-right:1px solid rgba(255,255,255,.15);flex-shrink:0}
+.ti .d{width:5px;height:5px;border-radius:50%;background:var(--gold2);flex-shrink:0}
+.hero{min-height:calc(100vh - 114px);display:grid;grid-template-columns:55% 45%;position:relative;overflow:hidden}
+.hero-l{background:var(--g);padding:5rem 4rem;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.hero-l::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.03) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
+.hero-l::before{content:"";position:absolute;bottom:-100px;left:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(184,146,42,.1) 0%,transparent 65%);pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;padding:.3rem .9rem;border-radius:100px;border:1px solid rgba(184,146,42,.35);background:rgba(184,146,42,.07);font-size:.7rem;font-weight:700;color:var(--gold2);letter-spacing:.12em;text-transform:uppercase;margin-bottom:2rem;width:fit-content;position:relative;z-index:1;animation:fsu .7s ease both}
+.pulse{width:6px;height:6px;border-radius:50%;background:var(--gold2);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.6)}}
+.hero-l h1{font-family:"Cormorant Garamond",serif;font-size:clamp(2.8rem,4.5vw,4.2rem);font-weight:700;line-height:1.12;color:var(--w);margin-bottom:1.4rem;position:relative;z-index:1;animation:fsu .8s .1s ease both}
+.hero-l h1 em{color:var(--gold2);font-style:normal}
+.hero-l p{font-size:1rem;line-height:1.9;color:rgba(255,255,255,.68);max-width:460px;margin-bottom:2.5rem;font-weight:300;position:relative;z-index:1;animation:fsu .8s .2s ease both}
+.hero-acts{display:flex;gap:.9rem;flex-wrap:wrap;position:relative;z-index:1;animation:fsu .8s .3s ease both}
+.bp{padding:.85rem 2rem;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--g);font-family:"Tajawal",sans-serif;font-size:.9rem;font-weight:800;border:none;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:0 4px 18px rgba(184,146,42,.35);transition:all .25s}
+.bp:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(184,146,42,.45)}
+.bs{padding:.85rem 2rem;background:transparent;color:rgba(255,255,255,.85);font-family:"Tajawal",sans-serif;font-size:.9rem;font-weight:600;border:1.5px solid rgba(255,255,255,.25);border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block;transition:all .25s}
+.bs:hover{border-color:var(--gold2);color:var(--gold2)}
+.hero-stats{display:flex;gap:0;margin-top:3.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.1);position:relative;z-index:1;animation:fsu .8s .4s ease both}
+.hs{display:flex;flex-direction:column;padding-right:2rem;margin-right:2rem;border-right:1px solid rgba(255,255,255,.1)}
+.hs:first-child{padding-right:0;margin-right:0;border-right:none}
+.hs-n{font-family:"Cormorant Garamond",serif;font-size:2.2rem;font-weight:700;color:var(--gold2);line-height:1}
+.hs-l{font-size:.7rem;color:rgba(255,255,255,.5);margin-top:.3rem}
+.hero-r{position:relative;overflow:hidden;background:#0a1a12}
+.hero-r img{width:100%;height:100%;object-fit:cover;opacity:.5;animation:zoom 14s ease forwards}
+@keyframes zoom{from{transform:scale(1.06)}to{transform:scale(1)}}
+.hero-r-ov{position:absolute;inset:0;background:linear-gradient(90deg,var(--g) 0%,transparent 35%),linear-gradient(0deg,rgba(10,26,18,.7) 0%,transparent 50%)}
+.hero-badge{position:absolute;bottom:2.5rem;right:2.5rem;background:rgba(255,255,255,.95);border-radius:10px;padding:1.1rem 1.5rem;box-shadow:0 8px 32px rgba(0,0,0,.2);display:flex;align-items:center;gap:.9rem;animation:fsd .9s .5s ease both}
+.hb-ico{width:42px;height:42px;background:var(--gpale);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.hb-n{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:700;color:var(--g);line-height:1}
+.hb-t{font-size:.7rem;color:var(--t3)}
+@keyframes fsu{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fsd{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+section{padding:7rem 4rem;scroll-margin-top:114px}
+.skip-link{position:absolute;top:-100px;left:1rem;background:var(--g);color:#fff;padding:.7rem 1.2rem;border-radius:6px;z-index:1000;text-decoration:none;font-size:.85rem;transition:top .2s}
+.skip-link:focus{top:1rem}
+.sl{display:inline-flex;align-items:center;gap:.6rem;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.05rem;font-weight:600;color:var(--g3);margin-bottom:.9rem}
+.sl::before{content:"";width:26px;height:2px;background:var(--gold);border-radius:2px}
+.st{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,3.2vw,3rem);font-weight:700;line-height:1.2;color:var(--t);max-width:580px;margin-bottom:1rem}
+.sd{font-size:.97rem;line-height:1.95;color:var(--t3);max-width:540px}
+.gline{width:48px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px;margin:1rem 0 2rem}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.sectors{background:var(--off)}
+.sectors-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.sec-card{border-radius:14px;overflow:hidden;position:relative;cursor:default;height:320px;transition:all .35s}
+.sec-card:hover{transform:translateY(-6px);box-shadow:var(--sh2)}
+.sec-img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.sec-card:hover .sec-img{transform:scale(1.06)}
+.sec-ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,26,18,.85) 0%,rgba(10,26,18,.3) 60%,transparent 100%);transition:all .35s}
+.sec-card:hover .sec-ov{background:linear-gradient(0deg,rgba(10,26,18,.9) 0%,rgba(10,26,18,.5) 70%,rgba(30,58,47,.2) 100%)}
+.sec-content{position:absolute;bottom:0;right:0;left:0;padding:2rem}
+.sec-ico{font-size:2rem;margin-bottom:.6rem;display:block}
+.sec-card h3{font-size:1.1rem;font-weight:700;color:var(--w);margin-bottom:.5rem}
+.sec-card p{font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.7;max-height:0;overflow:hidden;transition:max-height .35s ease,opacity .35s ease;opacity:0}
+.sec-card:hover p{max-height:100px;opacity:1}
+.sec-tag{display:inline-flex;margin-top:.7rem;padding:.25rem .8rem;background:rgba(184,146,42,.25);border:1px solid rgba(184,146,42,.4);border-radius:100px;font-size:.7rem;color:var(--gold3);font-weight:600}
+.about{background:var(--w)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.about-img-wrap{position:relative}
+.about-main-img{width:100%;border-radius:16px;object-fit:cover;height:520px;display:block}
+.about-badge-wrap{position:absolute;bottom:-2rem;left:-2rem;background:var(--g);border-radius:12px;padding:1.5rem 2rem;box-shadow:var(--sh2)}
+.ab-num{font-family:"Cormorant Garamond",serif;font-size:2.8rem;font-weight:700;color:var(--gold2);line-height:1}
+.ab-txt{font-size:.75rem;color:rgba(255,255,255,.7);margin-top:.2rem}
+.about-features{display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem}
+.af{display:flex;gap:1rem;align-items:flex-start;padding:1.2rem;background:var(--off);border:1px solid var(--bd);border-radius:10px;transition:all .25s}
+.af:hover{border-color:rgba(30,58,47,.22);box-shadow:var(--sh);transform:translateX(-4px)}
+.af-ico{width:42px;height:42px;flex-shrink:0;background:var(--gpale);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.af h4{font-size:.9rem;font-weight:700;color:var(--t);margin-bottom:.2rem}
+.af p{font-size:.82rem;color:var(--t3);line-height:1.7}
+.clients-sec{background:var(--g);padding:5rem 4rem}
+.clients-sec .sl{color:var(--gold2)}.clients-sec .sl::before{background:var(--gold2)}
+.clients-sec .st{color:var(--w)}.clients-sec .gline{background:linear-gradient(90deg,var(--gold2),var(--gold3))}
+.clients-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:3rem}
+.cl-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:1.6rem;transition:all .3s;display:flex;align-items:center;gap:1rem}
+.cl-card:hover{background:rgba(255,255,255,.1);border-color:rgba(184,146,42,.35);transform:translateY(-3px)}
+.cl-ico{width:44px;height:44px;background:rgba(184,146,42,.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.cl-name{font-size:.88rem;font-weight:700;color:var(--w);line-height:1.3}
+.cl-type{font-size:.72rem;color:rgba(255,255,255,.5);margin-top:.2rem}
+.blog{background:var(--off)}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.bl-card{background:var(--w);border:1px solid var(--bd);border-radius:12px;overflow:hidden;transition:all .3s;display:block;text-decoration:none;color:inherit}
+.bl-card:hover{box-shadow:var(--sh2);transform:translateY(-5px)}
+.bl-img{width:100%;height:180px;object-fit:cover;transition:transform .4s;display:block}
+.bl-card:hover .bl-img{transform:scale(1.04)}
+.bl-body{padding:1.5rem}
+.bl-cat{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g3);margin-bottom:.6rem}
+.bl-body h3{font-size:1rem;font-weight:700;color:var(--t);margin-bottom:.6rem;line-height:1.4}
+.bl-body p{font-size:.82rem;color:var(--t3);line-height:1.7}
+.bl-footer{display:flex;align-items:center;justify-content:space-between;margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--bd)}
+.bl-date{font-size:.72rem;color:var(--t3)}
+.bl-link{font-size:.78rem;font-weight:700;color:var(--g);text-decoration:none}
+.faq{background:var(--w)}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:3rem;align-items:start}
+.faq-list{display:flex;flex-direction:column;gap:.8rem}
+.faq-item{border:1px solid var(--bd);border-radius:10px;overflow:hidden;transition:all .25s}
+.faq-item.open{border-color:rgba(30,58,47,.25);box-shadow:var(--sh)}
+.faq-q{padding:1.2rem 1.5rem;display:flex;align-items:center;justify-content:space-between;cursor:pointer;gap:1rem}
+.faq-q span{font-size:.92rem;font-weight:700;color:var(--t)}
+.faq-icon{width:28px;height:28px;border-radius:50%;background:var(--gpale);display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;transition:all .3s;color:var(--g)}
+.faq-item.open .faq-icon{background:var(--g);color:var(--w);transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;font-size:.85rem;color:var(--t3);line-height:1.8;padding:0 1.5rem}
+.faq-item.open .faq-a{max-height:200px;padding:0 1.5rem 1.2rem}
+.faq-visual{background:var(--g);border-radius:16px;padding:3rem;position:relative;overflow:hidden}
+.faq-visual::before{content:"";position:absolute;top:-60px;left:-60px;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(184,146,42,.12) 0%,transparent 70%)}
+.fv-badge{width:56px;height:56px;border-radius:14px;background:rgba(184,146,42,.15);border:1px solid rgba(184,146,42,.3);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.4rem;position:relative;z-index:1}
+.fv-title{font-family:"Cormorant Garamond",serif;font-size:1.8rem;font-weight:700;color:var(--w);margin-bottom:.8rem;position:relative;z-index:1}
+.fv-text{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.85;margin-bottom:2rem;position:relative;z-index:1}
+.fv-contact{display:flex;flex-direction:column;gap:.8rem;position:relative;z-index:1}
+.fvc{display:flex;align-items:center;gap:.8rem;padding:1rem;background:rgba(255,255,255,.07);border-radius:8px;border:1px solid rgba(255,255,255,.1);transition:all .2s}
+.fvc:hover{background:rgba(255,255,255,.11)}
+.fvc-ico{font-size:1.1rem}.fvc h5{font-size:.7rem;font-weight:700;color:var(--gold2);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.15rem}
+.fvc p{font-size:.85rem;color:rgba(255,255,255,.75)}
+.fv-cta{display:block;margin-top:1.6rem;text-align:center;background:var(--gold);color:var(--t);font-weight:700;font-size:.88rem;padding:.95rem;border-radius:8px;text-decoration:none;position:relative;z-index:1;transition:all .2s}
+.fv-cta:hover{background:var(--gold2)}
+.cta{background:linear-gradient(135deg,var(--g) 0%,var(--g2) 60%,#142A1E 100%);padding:6rem 4rem;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(184,146,42,.08) 1px,transparent 1px);background-size:30px 30px}
+.cta h2{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:700;color:var(--w);margin-bottom:1.2rem;position:relative;z-index:1}
+.cta h2 em{color:var(--gold2);font-style:normal}
+.cta p{font-size:.97rem;color:rgba(255,255,255,.65);max-width:460px;margin:0 auto 2.5rem;line-height:1.9;position:relative;z-index:1}
+.cta-acts{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+.bg{padding:.9rem 2.2rem;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--g);font-family:"Tajawal",sans-serif;font-size:.92rem;font-weight:800;border:none;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:0 4px 18px rgba(184,146,42,.4);transition:all .25s}
+.bg:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(184,146,42,.5)}
+.bo{padding:.9rem 2.2rem;background:transparent;color:rgba(255,255,255,.85);font-family:"Tajawal",sans-serif;font-size:.92rem;font-weight:600;border:1.5px solid rgba(255,255,255,.25);border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block;transition:all .25s}
+.bo:hover{border-color:var(--gold2);color:var(--gold2)}
+.contact{background:var(--off)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;margin-top:2.5rem}
+.contact-info{display:flex;flex-direction:column;gap:1.2rem;margin-top:1.5rem}
+.ci{display:flex;gap:1rem;align-items:flex-start;padding:1.2rem;background:var(--w);border:1px solid var(--bd);border-radius:10px;transition:all .25s}
+.ci:hover{border-color:rgba(30,58,47,.22);box-shadow:var(--sh)}
+.ci-ico{width:42px;height:42px;background:var(--gpale);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.ci h5{font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);margin-bottom:.2rem}
+.ci p{font-size:.9rem;color:var(--t2)}
+.cform{background:var(--w);border-radius:14px;border:1px solid var(--bd);padding:2.5rem;box-shadow:var(--sh)}
+.cf-title{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:700;color:var(--t);margin-bottom:1.5rem}
+.fg{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem}
+.fg label{font-size:.75rem;font-weight:700;color:var(--t2);letter-spacing:.04em}
+.fg input,.fg select,.fg textarea{background:var(--off);border:1.5px solid var(--bd);border-radius:8px;color:var(--t);padding:.78rem 1rem;font-family:"Tajawal",sans-serif;font-size:.9rem;outline:none;transition:all .2s;width:100%;resize:none}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--g3);box-shadow:0 0 0 3px rgba(30,58,47,.07);background:var(--w)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+footer{background:var(--t);padding:5rem 4rem 2.5rem}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:2rem}
+.fb-logo img{height:50px;width:auto;object-fit:contain;background:rgba(255,255,255,.9);border-radius:8px;padding:5px 10px;margin-bottom:1rem}
+.fb p{font-size:.83rem;color:rgba(255,255,255,.45);line-height:1.85;max-width:270px;font-weight:300}
+.fc h5{font-size:.67rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:1.2rem;font-weight:700}
+.fc ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.fc ul a{font-size:.83rem;color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s;font-weight:300}
+.fc ul a:hover{color:var(--w)}
+.fbot{display:flex;justify-content:space-between;align-items:center}
+.fbot p{font-size:.75rem;color:rgba(255,255,255,.3)}
+.fbot span{font-size:.75rem;color:var(--gold2);letter-spacing:.1em;direction:ltr;opacity:.6}
+.mobile-menu{display:none;position:fixed;top:74px;right:0;left:0;background:var(--w);border-bottom:1px solid var(--bd);padding:1.5rem 2rem;z-index:299;flex-direction:column;gap:1rem;box-shadow:var(--sh2)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:var(--t2);text-decoration:none;font-size:.95rem;font-weight:500;padding:.5rem 0;border-bottom:1px solid var(--bd)}
+@media(max-width:1100px){
+nav,section,.clients-sec,.cta,footer{padding-right:2rem;padding-left:2rem}
+.hero{grid-template-columns:1fr}.hero-r{display:none}.hero-l{padding:4rem 2rem}
+.about-grid,.faq-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}
+.about-badge-wrap{left:1rem;bottom:-1rem}
+.sectors-grid,.clients-grid,.blog-grid{grid-template-columns:1fr 1fr}
+.ft{grid-template-columns:1fr 1fr}.frow{grid-template-columns:1fr}
+.nav-links{display:none}.ham{display:flex}
+}
+@media(max-width:640px){
+.sectors-grid,.clients-grid,.blog-grid{grid-template-columns:1fr}
+.hero-stats{flex-wrap:wrap;gap:1.2rem}
+.hs{border-right:none;padding-right:0;margin-right:0;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:1rem}
+}
+
+/* ===== Extra components for multi-page structure ===== */
+.page-hero{background:linear-gradient(135deg,var(--g) 0%,var(--g2) 100%);padding:calc(74px + 3.5rem) 4rem 3.5rem;position:relative;overflow:hidden}
+.page-hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);background-size:26px 26px;pointer-events:none}
+.crumb{display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:rgba(255,255,255,.55);margin-bottom:1.1rem;position:relative;z-index:1}
+.crumb a{color:rgba(255,255,255,.55);text-decoration:none}.crumb a:hover{color:var(--gold2)}
+.crumb span.sep{opacity:.5}
+.crumb span.cur{color:var(--gold2)}
+.page-hero h1{font-family:"Cormorant Garamond",serif;font-size:clamp(2.1rem,3.6vw,3.2rem);font-weight:700;color:var(--w);margin-bottom:.9rem;position:relative;z-index:1}
+.page-hero h1 em{font-style:normal;color:inherit}
+.page-hero p{font-size:.95rem;color:rgba(255,255,255,.68);max-width:600px;line-height:1.9;position:relative;z-index:1}
+@media(max-width:1100px){.page-hero{padding-right:2rem;padding-left:2rem}}
+
+/* Why-us */
+.why{background:var(--w)}
+.why-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.2rem;margin-top:3rem}
+.why-card{background:var(--off);border:1px solid var(--bd);border-radius:12px;padding:1.8rem 1.4rem;transition:all .3s;text-align:center}
+.why-card:hover{border-color:rgba(30,58,47,.22);box-shadow:var(--sh);transform:translateY(-4px)}
+.why-ico{width:48px;height:48px;margin:0 auto .9rem;background:var(--gpale);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+.why-card h4{font-size:.86rem;font-weight:700;color:var(--t);line-height:1.5}
+@media(max-width:1100px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.why-grid{grid-template-columns:1fr}}
+
+/* Services hub */
+.services-sec{background:var(--off)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.svc-card{background:var(--w);border:1px solid var(--bd);border-radius:14px;padding:2rem 1.7rem;transition:all .3s;display:flex;flex-direction:column;text-decoration:none}
+.svc-card:hover{transform:translateY(-6px);box-shadow:var(--sh2);border-color:rgba(30,58,47,.2)}
+.svc-ico{width:52px;height:52px;background:var(--gpale);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.2rem}
+.svc-card h3{font-size:1.05rem;font-weight:700;color:var(--t);margin-bottom:.6rem}
+.svc-card p{font-size:.85rem;color:var(--t3);line-height:1.8;margin-bottom:1.2rem;flex-grow:1}
+.svc-more{font-size:.8rem;font-weight:700;color:var(--g);display:inline-flex;align-items:center;gap:.4rem}
+@media(max-width:1100px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.svc-grid{grid-template-columns:1fr}}
+
+/* Needs / quiz */
+.needs{background:var(--g);position:relative;overflow:hidden}
+.needs::before{content:"";position:absolute;top:-80px;right:-80px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(184,146,42,.1) 0%,transparent 70%)}
+.needs .sl{color:var(--gold2)}.needs .sl::before{background:var(--gold2)}
+.needs .st{color:var(--w)}.needs .sd{color:rgba(255,255,255,.65)}
+.needs-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:3rem;position:relative;z-index:1}
+.need-btn{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:1.4rem 1rem;text-align:center;text-decoration:none;transition:all .25s;display:flex;flex-direction:column;align-items:center;gap:.6rem}
+.need-btn:hover{background:rgba(184,146,42,.16);border-color:rgba(184,146,42,.4);transform:translateY(-3px)}
+.need-ico{font-size:1.4rem}
+.need-btn span{font-size:.82rem;font-weight:700;color:var(--w)}
+@media(max-width:1100px){.needs-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.needs-grid{grid-template-columns:1fr}}
+
+/* Process steps */
+.process{background:var(--w)}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem;position:relative}
+.step{position:relative;padding:2rem 1.6rem;background:var(--off);border:1px solid var(--bd);border-radius:14px}
+.step-n{font-family:"Cormorant Garamond",serif;font-size:2.4rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:1rem}
+.step h4{font-size:.95rem;font-weight:700;color:var(--t);margin-bottom:.5rem}
+.step p{font-size:.82rem;color:var(--t3);line-height:1.75}
+@media(max-width:1100px){.process-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.process-grid{grid-template-columns:1fr}}
+
+/* Stats bar */
+.stats{background:var(--t);padding:4rem}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:1100px;margin:0 auto}
+.stat{text-align:center}
+.stat-n{font-family:"Cormorant Garamond",serif;font-size:2.6rem;font-weight:700;color:var(--gold2);line-height:1}
+.stat-l{font-size:.78rem;color:rgba(255,255,255,.55);margin-top:.5rem}
+@media(max-width:640px){.stats-grid{grid-template-columns:1fr 1fr;gap:2rem}}
+
+/* Success stories */
+.story-card{background:var(--w);border:1px solid var(--bd);border-radius:14px;padding:2rem;margin-bottom:1.5rem}
+.story-tag{display:inline-flex;gap:.5rem;font-size:.7rem;font-weight:700;color:var(--g3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:.8rem}
+.story-card h3{font-family:"Cormorant Garamond",serif;font-size:1.5rem;color:var(--t);margin-bottom:1rem}
+.story-block{margin-bottom:1rem}
+.story-block h5{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:.3rem}
+.story-block p{font-size:.88rem;color:var(--t3);line-height:1.8}
+.story-note{background:var(--gpale);border:1px dashed rgba(30,58,47,.25);border-radius:12px;padding:2rem;text-align:center;margin-top:2rem}
+.story-note p{font-size:.9rem;color:var(--t2);line-height:1.9}
+
+/* Need-help box */
+.help-box{background:var(--w);border:1px solid var(--bd);border-radius:14px;padding:2rem;text-align:center;margin-top:2rem}
+.help-box h4{font-family:"Cormorant Garamond",serif;font-size:1.3rem;color:var(--t);margin-bottom:.5rem}
+.help-box p{font-size:.86rem;color:var(--t3);margin-bottom:1.2rem}
+
+/* Detail service page */
+.svc-detail{background:var(--w)}
+.svc-detail-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:4rem;align-items:start}
+.svc-list{display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem}
+.svc-item{display:flex;gap:.9rem;align-items:flex-start;padding:1rem;background:var(--off);border:1px solid var(--bd);border-radius:10px}
+.svc-item-ico{color:var(--g3);font-weight:800;flex-shrink:0}
+.svc-side{background:var(--g);border-radius:16px;padding:2.2rem;position:sticky;top:100px}
+.svc-side h4{font-family:"Cormorant Garamond",serif;font-size:1.3rem;color:var(--w);margin-bottom:.8rem}
+.svc-side p{font-size:.86rem;color:rgba(255,255,255,.65);line-height:1.85;margin-bottom:1.5rem}
+.svc-related{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12)}
+.svc-related a{display:block;font-size:.82rem;color:rgba(255,255,255,.75);text-decoration:none;padding:.4rem 0}
+.svc-related a:hover{color:var(--gold2)}
+@media(max-width:1100px){.svc-detail-grid{grid-template-columns:1fr}.svc-side{position:static}}
+
+.nav-links a.active{color:var(--g);font-weight:700}
+.nav-links a.active::after{width:100%}
+.stub{background:var(--w);min-height:40vh;display:flex;align-items:center;justify-content:center;text-align:center}
+
+/* ===== RTL text alignment: right-aligned + justified line edges ===== */
+body{text-align:left}
+p,.faq-a,.svc-item p{text-align:justify;text-align-last:left}
+
+/* Sector accordion (reuses faq-item/faq-q/faq-icon/faq-a pattern) */
+.sector-offer-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}
+.sector-offer-tags a{font-size:.76rem;font-weight:700;color:var(--g);background:var(--gpale);border:1px solid var(--bd);border-radius:100px;padding:.35rem .9rem;text-decoration:none;transition:all .2s}
+.sector-offer-tags a:hover{background:var(--g);color:var(--w)}
+.sector-offer-cta{display:inline-block;margin-top:.9rem;font-size:.82rem;font-weight:700;color:var(--w);background:var(--g);padding:.6rem 1.3rem;border-radius:8px;text-decoration:none}
+.sector-offer-cta:hover{background:var(--g2)}
+
+/* Article / blog post */
+.article-wrap{background:var(--w);padding:4rem}
+.article-body{max-width:760px;margin:0 auto}
+.article-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.8rem;color:var(--t3);margin-bottom:1.6rem;align-items:center}
+.article-meta .bl-cat{margin:0}
+.article-hero-img{width:100%;border-radius:14px;margin-bottom:2.5rem;max-height:420px;object-fit:cover;display:block}
+.article-body h2{font-family:"Cormorant Garamond",serif;font-size:1.55rem;font-weight:700;color:var(--t);margin-top:2.6rem;margin-bottom:1rem}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--t);margin-top:1.8rem;margin-bottom:.7rem}
+.article-body p{font-size:.95rem;line-height:2;color:var(--t2);margin-bottom:1.3rem}
+.article-body ul,.article-body ol{padding-left:1.4rem;margin-bottom:1.3rem}
+.article-body li{margin-bottom:.7rem;font-size:.93rem;line-height:1.9;color:var(--t2)}
+.article-body strong{color:var(--t);font-weight:700}
+.article-lede{font-size:1.05rem;line-height:1.95;color:var(--t2);margin-bottom:1.8rem;padding-bottom:1.8rem;border-bottom:1px solid var(--bd)}
+.article-cta-box{background:var(--gpale);border:1px solid var(--bd);border-radius:14px;padding:2rem;margin-top:3rem;text-align:center}
+.article-cta-box h4{font-family:"Cormorant Garamond",serif;font-size:1.3rem;color:var(--t);margin-bottom:.6rem}
+.article-cta-box p{font-size:.86rem;color:var(--t3);margin-bottom:1.2rem}
+.article-note{background:var(--off);border-left:3px solid var(--gold);border-radius:8px;padding:1.2rem 1.4rem;margin:1.8rem 0;font-size:.86rem;color:var(--t3);line-height:1.85}
+@media(max-width:1100px){.article-wrap{padding:2.5rem 1.5rem}}
+
+/* Client logo cards */
+.cl-card{padding:1rem 1.2rem}
+.cl-logo-wrap{width:52px;height:52px;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:6px;flex-shrink:0;overflow:hidden}
+.cl-logo-wrap img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.cl-logo-fallback{font-size:1.3rem;background:var(--gpale)}
+
+/* Journey / process cards (numbered) */
+.jr-card{position:relative}
+.jr-num{position:absolute;top:1.4rem;right:1.4rem;font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:700;color:var(--gold);opacity:.55}
+.jr-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+@media(max-width:1100px){.jr-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.jr-grid{grid-template-columns:1fr}}
+
+.lang-btn{font-size:.75rem;font-weight:800;color:var(--g);border:1px solid var(--bd);border-radius:100px;padding:.4rem .8rem;text-decoration:none;letter-spacing:.03em}
+.lang-btn:hover{background:var(--gpale)}
+
+
+</style>
+</head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<nav aria-label="Main navigation" id="nav">
-<a class="logo" href="/en/"><img alt="Itqan Business Services logo" height="40" loading="eager" src="/assets/logo.png" width="40"/><div class="logo-txt"><div class="ln">Itqan Business Services</div><div class="le">ITQAN BUSINESS SERVICES</div></div></a>
-<ul class="nav-links">
-<li><a href="/en/">Home</a></li><li><a href="/en/about/">About Us</a></li><li><a class="active" href="/en/services/">Services</a></li><li><a href="/en/sectors/">Sectors</a></li><li><a href="/en/success-stories/">Success Stories</a></li><li><a href="/en/blog/">Blog</a></li><li><a href="/en/platforms/">Our Platforms</a></li><li><a href="/en/contact/">Contact Us</a></li>
-<li><a class="nb" href="https://wa.me/966569051686?text=مرحباً، أرغب بحجز استشارة مع إتقان لخدمات الأعمال" rel="noopener" target="_blank">Book a Consultation</a></li>
-<li><a class="lang-switch" href="/services/hr/">AR</a></li></ul>
-<button aria-expanded="false" aria-label="Menu" class="ham" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+<a href="/en/#home" class="skip-link">Skip to content</a>
+<nav id="nav" aria-label="Main navigation">
+  <a class="logo" href="/en/"><img src="data:image/png;base64,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" width="40" height="40" alt="Itqan Business Services logo" loading="eager"><div class="logo-txt"><div class="ln">Itqan Business Services</div><div class="le">ITQAN BUSINESS SERVICES</div></div></a>
+  <ul class="nav-links">
+    <li><a href="/en/">Home</a></li><li><a href="/en/about/">About Us</a></li><li><a href="/en/services/" class="active">Our Services</a></li><li><a href="/en/sectors/">Sectors</a></li><li><a href="/en/success-stories/">Success Stories</a></li><li><a href="/en/blog/">Blog</a></li><li><a href="/en/contact/">Contact Us</a></li>
+    <li><a href="https://wa.me/966569051686?text=Hello%2C%20I%27d%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener" class="nb">Chat on WhatsApp</a></li>
+  </ul>
+  <button class="ham" aria-label="Menu" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
 </nav>
-<nav aria-label="Mobile navigation" class="mobile-menu" id="mobileMenu">
-<a href="/en/" onclick="toggleMenu()">Home</a><a href="/en/about/" onclick="toggleMenu()">About Us</a><a href="/en/services/" onclick="toggleMenu()">Services</a><a href="/en/sectors/" onclick="toggleMenu()">Sectors</a><a href="/en/success-stories/" onclick="toggleMenu()">Success Stories</a><a href="/en/blog/" onclick="toggleMenu()">Blog</a><a href="/en/platforms/" onclick="toggleMenu()">Our Platforms</a><a href="/en/contact/" onclick="toggleMenu()">Contact Us</a>
-<a href="https://wa.me/966569051686?text=مرحباً، أرغب بحجز استشارة مع إتقان لخدمات الأعمال" onclick="toggleMenu()" rel="noopener" target="_blank">Book a Consultation on WhatsApp</a>
-<a class="lang-switch" href="/services/hr/" onclick="toggleMenu()">العربية</a></nav>
-<main id="main">
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <a href="/en/" onclick="toggleMenu()">Home</a><a href="/en/about/" onclick="toggleMenu()">About Us</a><a href="/en/services/" onclick="toggleMenu()">Our Services</a><a href="/en/sectors/" onclick="toggleMenu()">Sectors</a><a href="/en/success-stories/" onclick="toggleMenu()">Success Stories</a><a href="/en/blog/" onclick="toggleMenu()">Blog</a><a href="/en/contact/" onclick="toggleMenu()">Contact Us</a>
+  <a href="https://wa.me/966569051686?text=Hello%2C%20I%27d%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener" onclick="toggleMenu()">Chat on WhatsApp</a>
+</nav>
 <section class="page-hero">
-<div class="crumb"><a href="/en/">Home</a><span class="sep">/</span><a href="/en/services/">Services</a><span class="sep">/</span><span class="cur">Human Resources</span></div>
-<h1>🤝 Human Resources</h1>
-<p>Integrated HR solutions covering operations, hiring, policies and procedures, organisational structures and performance management.</p>
+  <div class="crumb"><a href="/en/">Home</a><span class="sep">/</span><span class="cur">Our Services</span></div>
+  <h1>Human Resources</h1>
+  <p>Integrated HR solutions covering operations, hiring, policies and procedures, organisational structures and performance management.</p>
 </section>
 <section class="svc-detail">
-<div class="svc-detail-grid">
-<div>
-<div class="sl">What Do We Offer in This Service?</div>
-<h2 class="st">Human Resources</h2>
-<div class="gline"></div>
-<p class="sd" style="margin-bottom:1.5rem">Integrated HR solutions covering operations, hiring, policies and procedures, organisational structures and performance management.</p>
-<div class="svc-list"><div class="svc-item"><span class="svc-item-ico">●</span><p>Designing Organisational Structures and Job Descriptions</p></div><div class="svc-item"><span class="svc-item-ico">●</span><p>Building Policies, Procedures and Workplace Regulations</p></div><div class="svc-item"><span class="svc-item-ico">●</span><p>Recruitment, Talent Sourcing and Selection</p></div><div class="svc-item"><span class="svc-item-ico">●</span><p>Performance Evaluation and Management Systems</p></div><div class="svc-item"><span class="svc-item-ico">●</span><p>Ongoing HR Operations and Support</p></div></div>
-</div>
-<div class="svc-side reveal">
-<h3>Is This Service Right for Your Business?</h3>
-<p>We design the solution to match your business's size, needs and growth stage, and this service can be combined with others into an integrated package.</p>
-<a class="bg" href="/en/contact/?service=hr" style="display:block;text-align:center">Request Your HR Assessment →</a>
-<div class="svc-related">
-<p style="font-size:.72rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem">Other Services</p>
-<a href="/en/services/formation/">🏢 Company Formation</a><a href="/en/services/accounting/">📊 Accounting &amp; Finance</a><a href="/en/services/marketing/">📈 Marketing &amp; Business Growth</a><a href="/en/services/erp/">💻 ERP &amp; Digital Transformation</a><a href="/en/services/consulting/">🧭 Consulting &amp; Business Development</a><a href="/en/services/finance/">💰 Financing &amp; Support</a>
-</div>
-</div>
-</div>
+  <div class="svc-detail-grid">
+    <div>
+      <div class="sl">What do we offer in this service?</div>
+      <h2 class="st">Human Resources</h2>
+      <div class="gline"></div>
+      <p class="sd" style="margin-bottom:1.5rem">Integrated HR solutions covering operations, hiring, policies and procedures, organisational structures and performance management.</p>
+      <div class="svc-list"><div class="svc-item"><span class="svc-item-ico">●</span><p>Designing organisational structures and job descriptions</p></div><div class="svc-item"><span class="svc-item-ico">●</span><p>Building policies, procedures and work regulations</p></div><div class="svc-item"><span class="svc-item-ico">●</span><p>Recruitment, sourcing and talent selection</p></div><div class="svc-item"><span class="svc-item-ico">●</span><p>Performance evaluation and management systems</p></div><div class="svc-item"><span class="svc-item-ico">●</span><p>Ongoing operation and support for HR departments</p></div></div>
+    </div>
+    <div class="svc-side reveal">
+      <h4>Is this service right for your business?</h4>
+      <p>We design the solution around your business's size, needs and stage of growth, and this service can be combined with others in an integrated package.</p>
+      <a href="/en/contact/?service=hr" class="bg" style="display:block;text-align:center">Request an HR Assessment ←</a>
+      <div class="svc-related">
+        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.9rem;font-weight:600;color:var(--gold3);margin-bottom:.5rem">Other Services</p>
+        <a href="/en/services/accounting/">Accounting &amp; Finance</a><a href="/en/services/marketing/">Marketing &amp; Business Growth</a><a href="/en/services/erp/">ERP &amp; Digital Transformation</a><a href="/en/services/consulting/">Consulting &amp; Business Development</a><a href="/en/services/finance/">Financing &amp; Support</a>
+      </div>
+      <div class="svc-related" style="margin-top:1.2rem"><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.9rem;font-weight:600;color:var(--gold3);margin-bottom:.5rem">Related Articles</p><a href="/en/blog/hr-department-setup-guide/">Your Practical Guide to Building an Effective HR Department</a></div>
+    </div>
+  </div>
 </section>
 <div class="cta">
-<h2>Do you have a challenge in <em>Human Resources</em>?</h2>
-<p>Talk to us today and get advice from our experts.</p>
-<div class="cta-acts"><a class="bg" href="/en/contact/">Request Your HR Assessment</a><a class="bo" href="tel:+966569051686">Call Now</a></div>
+  <h2>Facing an <em>HR</em> challenge?</h2>
+  <p>Talk to us today, and our team will take care of what your business needs, step by step.</p>
+  <div class="cta-acts"><a href="/en/contact/" class="bg">Request an HR Assessment</a><a href="tel:+966569051686" class="bo">Call Now</a></div>
 </div>
-</main>
 <footer>
-<div class="ft">
-<div class="fb"><div class="fb-logo"><img alt="Itqan Business Services logo" height="44" loading="lazy" src="/assets/logo.png" width="44"/></div><p>Your partner in growing your business — integrated solutions in company formation, HR, accounting and finance, marketing, ERP and digital transformation, consulting and financing in Saudi Arabia.</p>
-<div class="social-links">
-<a aria-label="WhatsApp" href="https://wa.me/966569051686" rel="noopener" target="_blank"><svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.4 1.3-1.93 1.35-.5.05-1.03.25-3.46-.72-2.93-1.17-4.8-4.15-4.94-4.34-.14-.19-1.18-1.57-1.18-3 0-1.43.75-2.13 1.02-2.42.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.35 1.45.29.14.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.63-.14.26.09 1.65.78 1.93.92.29.14.48.22.55.34.07.13.07.72-.17 1.4z"></path></svg></a>
-<a aria-label="Instagram" href="https://www.instagram.com/itqan.business?igsh=MzQ2N2RxaHZtYm84" rel="noopener" target="_blank"><svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.5.5.9 1.1 1.15 1.76.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.76c-.5.5-1.1.9-1.76 1.15-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.76-1.15 4.9 4.9 0 0 1-1.15-1.76c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76A4.9 4.9 0 0 1 5.44.54C6.08.29 6.81.12 7.87.07 8.94.01 9.28 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm6.4-8.4a1.17 1.17 0 1 1-2.34 0 1.17 1.17 0 0 1 2.34 0z"></path></svg></a>
-<a aria-label="Twitter / X" href="https://x.com/infoitqanbs?s=21" rel="noopener" target="_blank"><svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-7.2L4.5 22H1.3l8.1-9.3L1 2h7.2l5 6.6L18.9 2zm-1.2 18h1.7L6.4 4h-1.8l13.1 16z"></path></svg></a>
-<a aria-label="LinkedIn" href="https://www.linkedin.com/company/itqan-business-services" rel="noopener" target="_blank"><svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"></path></svg></a>
-<a aria-label="TikTok" href="https://www.tiktok.com/@itqanbs?_r=1&amp;_t=ZS-97sogmCe3Gc" rel="noopener" target="_blank"><svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M16.6 5.82c-.9-.98-1.4-2.25-1.4-3.57h-3.13v13.44c0 1.6-1.3 2.9-2.9 2.9a2.9 2.9 0 0 1-2.9-2.9 2.9 2.9 0 0 1 2.9-2.9c.28 0 .55.04.8.11V9.7a6.06 6.06 0 0 0-.8-.05A6.05 6.05 0 0 0 3.12 15.7 6.05 6.05 0 0 0 9.17 21.75a6.05 6.05 0 0 0 6.05-6.05V9.01a9.1 9.1 0 0 0 5.34 1.71V7.6c-1.4 0-2.75-.55-3.96-1.78z"></path></svg></a>
-<a aria-label="Facebook" href="https://www.facebook.com/share/1HTgwCNa7R/?mibextid=wwXIfr" rel="noopener" target="_blank"><svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"></path></svg></a>
-</div>
-<p style="margin-top:1.5rem;font-size:.78rem"><a href="https://start.itqanbs.sa" rel="noopener" style="color:var(--gold2);font-weight:700" target="_blank">Foreign investor? Discover our dedicated platform for foreign investors in Saudi Arabia ↗</a></p>
-<p style="margin-top:.6rem;font-size:.78rem"><a href="https://simam.itqanbs.sa" rel="noopener" style="color:var(--gold2);font-weight:700" target="_blank">🗂️ Track your requests, files and business alerts in one place on the Simam platform ↗</a></p>
-</div>
-<div class="fc"><h3>Site</h3><ul>
-<li><a href="/en/">Home</a></li>
-<li><a href="/en/about/">About Us</a></li>
-<li><a href="/en/services/">Services</a></li>
-<li><a href="/en/sectors/">Sectors</a></li>
-<li><a href="/en/success-stories/">Success Stories</a></li>
-<li><a href="/en/blog/">Blog</a></li>
-<li><a href="/en/platforms/">Our Platforms</a></li>
-<li><a href="/en/contact/">Contact Us</a></li>
-</ul></div>
-<div class="fc"><h3>Services</h3><ul><li><a href="/en/services/formation/">Company Formation</a></li><li><a href="/en/services/hr/">Human Resources</a></li><li><a href="/en/services/accounting/">Accounting &amp; Finance</a></li><li><a href="/en/services/marketing/">Marketing &amp; Business Growth</a></li><li><a href="/en/services/erp/">ERP &amp; Digital Transformation</a></li><li><a href="/en/services/consulting/">Consulting &amp; Business Development</a></li><li><a href="/en/services/finance/">Financing &amp; Support</a></li><li><a href="https://invest.itqanbs.sa/">Foreign Investment (MISA)</a></li></ul></div>
-<div class="fc"><h3>Contact Us</h3><ul>
-<li><a href="tel:+966569051686">+966 56 905 1686</a></li>
-<li><a href="mailto:info@itqanbs.sa">info@itqanbs.sa</a></li>
-<li><a href="/en/contact/">Al Olaya View — Riyadh</a></li>
-<li><a href="/en/privacy/">Privacy Policy</a></li>
-<li><a href="/en/terms/">Terms &amp; Conditions</a></li>
-</ul></div>
-</div>
-<div class="fbot"><p>© 2026 Itqan Business Services. All rights reserved.</p><span>www.itqanbs.sa</span></div>
+  <div class="ft">
+    <div class="fb"><div class="fb-logo"><img src="data:image/png;base64,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" width="44" height="44" alt="Itqan Business Services logo" loading="lazy"></div><p>With you from idea to operation and growth — integrated solutions in HR, accounting and finance, marketing, ERP and digital transformation, consulting and financing in the Kingdom of Saudi Arabia.</p>
+    <div class="social-links">
+      <a href="https://wa.me/966569051686" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.4 1.3-1.93 1.35-.5.05-1.03.25-3.46-.72-2.93-1.17-4.8-4.15-4.94-4.34-.14-.19-1.18-1.57-1.18-3 0-1.43.75-2.13 1.02-2.42.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.35 1.45.29.14.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.63-.14.26.09 1.65.78 1.93.92.29.14.48.22.55.34.07.13.07.72-.17 1.4z"/></svg></a>
+      <a href="https://www.instagram.com/itqan.business?igsh=MzQ2N2RxaHZtYm84" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.5.5.9 1.1 1.15 1.76.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.76c-.5.5-1.1.9-1.76 1.15-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.76-1.15 4.9 4.9 0 0 1-1.15-1.76c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76A4.9 4.9 0 0 1 5.44.54C6.08.29 6.81.12 7.87.07 8.94.01 9.28 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm6.4-8.4a1.17 1.17 0 1 1-2.34 0 1.17 1.17 0 0 1 2.34 0z"/></svg></a>
+      <a href="https://x.com/infoitqanbs?s=21" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-7.2L4.5 22H1.3l8.1-9.3L1 2h7.2l5 6.6L18.9 2zm-1.2 18h1.7L6.4 4h-1.8l13.1 16z"/></svg></a>
+      <a href="https://www.linkedin.com/company/itqan-business-services" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg></a>
+      <a href="https://www.tiktok.com/@itqanbs?_r=1&_t=ZS-97sogmCe3Gc" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.6 5.82c-.9-.98-1.4-2.25-1.4-3.57h-3.13v13.44c0 1.6-1.3 2.9-2.9 2.9a2.9 2.9 0 0 1-2.9-2.9 2.9 2.9 0 0 1 2.9-2.9c.28 0 .55.04.8.11V9.7a6.06 6.06 0 0 0-.8-.05A6.05 6.05 0 0 0 3.12 15.7 6.05 6.05 0 0 0 9.17 21.75a6.05 6.05 0 0 0 6.05-6.05V9.01a9.1 9.1 0 0 0 5.34 1.71V7.6c-1.4 0-2.75-.55-3.96-1.78z"/></svg></a>
+      <a href="https://www.facebook.com/share/1HTgwCNa7R/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg></a>
+    </div>
+    <p style="margin-top:1.5rem;font-size:.78rem"><a href="https://start.itqanbs.sa" target="_blank" rel="noopener" style="color:var(--gold2);font-weight:700">Foreign investor? Discover our dedicated platform for foreign investors in Saudi Arabia ↗</a></p>
+    <p style="margin-top:.6rem;font-size:.78rem"><a href="https://simam.itqanbs.sa" target="_blank" rel="noopener" style="color:var(--gold2);font-weight:700">🔒 Existing client? Track your requests in real time through the Simam portal ↗</a></p>
+    </div>
+    <div class="fc"><h5>Site</h5><ul>
+      <li><a href="/en/">Home</a></li>
+      <li><a href="/en/about/">About Us</a></li>
+      <li><a href="/en/services/">Our Services</a></li>
+      <li><a href="/en/sectors/">Sectors</a></li>
+      <li><a href="/en/success-stories/">Success Stories</a></li>
+      <li><a href="/en/blog/">Blog</a></li>
+      <li><a href="/en/contact/">Contact Us</a></li>
+    </ul></div>
+    <div class="fc"><h5>Services</h5><ul><li><a href="/en/services/hr/">Human Resources</a></li><li><a href="/en/services/accounting/">Accounting &amp; Finance</a></li><li><a href="/en/services/marketing/">Marketing &amp; Business Growth</a></li><li><a href="/en/services/erp/">ERP &amp; Digital Transformation</a></li><li><a href="/en/services/consulting/">Consulting &amp; Business Development</a></li><li><a href="/en/services/finance/">Financing &amp; Support</a></li></ul></div>
+    <div class="fc"><h5>Contact Us</h5><ul>
+      <li><a href="tel:+966569051686">+966 56 905 1686</a></li>
+      <li><a href="mailto:info@itqanbs.sa">info@itqanbs.sa</a></li>
+      <li><a href="/en/contact/">Al Olaya View — Riyadh</a></li>
+      <li><a href="/en/privacy/">Privacy Policy</a></li>
+      <li><a href="/en/terms/">Terms &amp; Conditions</a></li>
+    </ul></div>
+  </div>
+  <div class="fbot"><p>© 2026 Itqan Business Services. All rights reserved. — Unified National Number: 7049388205</p><span>www.itqanbs.sa</span></div>
 </footer>
+
 <script>
 window.addEventListener("scroll",()=>document.getElementById("nav").classList.toggle("scrolled",scrollY>20));
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth",block:"start"})}}));
@@ -208,17 +506,18 @@ function handleSubmit(e){
   const orig=btn.textContent;
   fetch(form.action,{method:"POST",body:new FormData(form),headers:{Accept:"application/json"}})
     .then(()=>{
-      btn.textContent="✓ تم الإرسال بنجاح!";
+      btn.textContent="✓ Sent successfully!";
       btn.style.background="var(--g3)";
     })
     .catch(()=>{
-      btn.textContent="حدث خطأ، حاول عبر الهاتف";
+      btn.textContent="An error occurred, please try by phone";
     })
     .finally(()=>{
       setTimeout(()=>{btn.textContent=orig;btn.style.background="";form.reset()},3000);
     });
 }
+
 </script>
-<script>(function(){var d=0;function l(){if(d)return;d=1;var s=document.createElement("script");s.src="https://widget.gabster.ai/loader?cbid=6aa5ca4412f592505d0649dd";s.setAttribute("data-gabster-widget","");s.setAttribute("data-embed-type","widget");s.async=true;document.body.appendChild(s)}["scroll","pointerdown","keydown","touchstart"].forEach(function(e){addEventListener(e,l,{once:true,passive:true})});addEventListener("load",function(){setTimeout(l,7000)})})();</script>
+<script data-gabster-widget src="https://widget.gabster.ai/loader?cbid=6aa5ca4412f592505d0649dd" data-embed-type="widget"></script>
 </body>
 </html>
