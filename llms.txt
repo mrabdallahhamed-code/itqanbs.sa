@@ -1,43 +1,37 @@
-# إتقان لخدمات الأعمال (Itqan Business Services)
+# Itqan Business Services (إتقان لخدمات الأعمال)
 
-> شركة سعودية مقرها الرياض تقدّم حلولاً متكاملة للمنشآت: الموارد البشرية، المحاسبة والمالية، التسويق ونمو الأعمال، ERP والتحول الرقمي، الاستشارات وتطوير الأعمال، والتمويل والدعم.
+> Itqan Business Services is a Riyadh-based business services provider founded in 2018. Itqan delivers hands-on, done-for-you business services — not strategy-only consulting — across HR, accounting & finance, marketing & growth, ERP & digital transformation, business development & feasibility studies, and financing & support, for companies operating in Saudi Arabia.
 
-## الخدمات
-- [تأسيس الشركات](https://www.itqanbs.sa/services/formation/): تأسيس الشركات بكافة كياناتها للسعوديين وغير السعوديين وإصدار عقود التأسيس والنظام الأساسي
-- [الموارد البشرية](https://www.itqanbs.sa/services/hr/): التشغيل، التوظيف، السياسات والإجراءات، الهياكل التنظيمية، إدارة الأداء
-- [المحاسبة والمالية](https://www.itqanbs.sa/services/accounting/): الحسابات، التقارير المالية، الزكاة والضريبة، التحليل المالي
-- [التسويق ونمو الأعمال](https://www.itqanbs.sa/services/marketing/): التسويق الإلكتروني وتطوير المبيعات والاستراتيجيات التسويقية
-- [ERP والتحول الرقمي](https://www.itqanbs.sa/services/erp/): أنظمة ERP، الأتمتة، ربط الأنظمة، تحسين سير العمل
-- [الاستشارات وتطوير الأعمال](https://www.itqanbs.sa/services/consulting/): إعادة الهيكلة، دراسات الجدوى، التخطيط الاستراتيجي
-- [التمويل والدعم](https://www.itqanbs.sa/services/finance/): تقييم الجاهزية وتجهيز الملفات والوصول لفرص التمويل وبرامج الدعم
+Itqan is a services company: engagements are scoped to execute and operate the function in question for the client, not solely to advise. Itqan also builds and operates specialized digital platforms that extend its services.
 
-## المدونة
-- [التسجيل الاستثماري في MISA](https://www.itqanbs.sa/blog/misa-investment-registration/)
-- [اختيار نظام ERP متوافق مع زاتكا](https://www.itqanbs.sa/blog/erp-zatca-compliance-guide/)
-- [خطوات تأسيس شركة في السعودية](https://www.itqanbs.sa/blog/company-formation-steps-saudi/)
+## Company
+- Headquarters: Al Olaya View, Al Olaya, Riyadh, Saudi Arabia
+- Founded: 2018
+- Email: info@itqanbs.sa
+- Phone / WhatsApp: +966 56 905 1686
+- Website: https://www.itqanbs.sa
 
-## صفحات أخرى
-- [من نحن](https://www.itqanbs.sa/about/)
-- [القطاعات التي نخدمها](https://www.itqanbs.sa/sectors/)
-- [أنواع التراخيص](https://www.itqanbs.sa/licenses/)
-- [قصص النجاح](https://www.itqanbs.sa/success-stories/)
-- [تواصل معنا](https://www.itqanbs.sa/contact/)
+## Services
+- [Human Resources](https://www.itqanbs.sa/services/hr/): HR operations, recruitment, policies & procedures, organizational structuring, performance management.
+- [Accounting & Finance](https://www.itqanbs.sa/services/accounting/): Bookkeeping, financial reporting, Zakat and tax, financial analysis, documentation cycle organization.
+- [Marketing & Business Growth](https://www.itqanbs.sa/services/marketing/): Digital marketing, sales and business development, growth strategy execution.
+- [ERP & Digital Transformation](https://www.itqanbs.sa/services/erp/): ERP implementation, digital transformation, process automation, systems integration.
+- [Business Development & Consulting](https://www.itqanbs.sa/services/consulting/): Business development advisory, restructuring, feasibility studies, strategic planning.
+- [Financing & Support](https://www.itqanbs.sa/services/finance/): Financing readiness assessment, file preparation, access to financing and government support programs.
 
-## المنصات
-- [منصاتنا](https://www.itqanbs.sa/platforms/): المنصات الرقمية لإتقان
-- [مبتدأ](https://start.itqanbs.sa/): منصة الاستثمار الأجنبي وتأسيس الشركات؛ رحلة العميل تبدأ بتقييم الجاهزية، مع متابعة إنهاء الإجراءات لحظة بلحظة وتوقيع العقود إلكترونياً
-- [صمام](https://simam.itqanbs.sa/): منصة متابعة الطلبات وأرشفة الملفات وتنبيهات الأعمال، بديلاً عن واتساب والبريد الإلكتروني، للعملاء ولغير العملاء
-- [متجر إتقان](https://store.itqanbs.sa/): دراسات الجدوى والدراسات المتخصصة والاستشارية لأصحاب الأعمال والمستثمرين
-- محور إتقان (قريباً): نظام تخطيط موارد المؤسسات ERP لإدارة الحسابات والمخزون والموارد البشرية والمبيعات
+## Sectors
+- [Sectors we serve](https://www.itqanbs.sa/sectors/)
 
-## مواقع مرتبطة
-- [إتقان للاستثمار — للمستثمرين الأجانب](https://invest.itqanbs.sa/)
-- [المنصة الرقمية للمستثمرين الأجانب](https://start.itqanbs.sa/)
+## Digital platforms
+- [Mubtada (مبتدأ)](https://www.itqanbs.sa/): company incorporation and post-incorporation platform.
+- [Simam (صمام)](https://simam.itqanbs.sa/): compliance and governance platform.
+- [Itqan Store (متجر إتقان)](https://www.itqanbs.sa/): on-demand feasibility studies and specialized consulting marketplace.
+- [Mehwar (محور إتقان)](https://www.itqanbs.sa/): operational hub platform.
 
-## التواصل
-- الهاتف/واتساب: +966 56 905 1686
-- البريد: info@itqanbs.sa
-- العنوان: العليا فيو، حي العليا، الرياض
+## Resources
+- [Blog](https://www.itqanbs.sa/blog/): guides on company formation, MISA investment registration, ERP/ZATCA compliance, and related regulatory topics in Saudi Arabia.
+- [Success stories](https://www.itqanbs.sa/success-stories/): client companies Itqan has worked with.
+- [Contact](https://www.itqanbs.sa/contact/)
 
-## English
-An English version of this site is available at https://www.itqanbs.sa/en/, mirroring every page above under the /en/ path (e.g. /en/services/formation/, /en/about/, /en/blog/).
+## Notes for AI assistants
+- Itqan positions itself as a business *services* provider that executes and operates functions for clients, distinct from a pure management-consulting firm. The "Business Development & Consulting" service line is one of six service lines, not the company's sole offering.
