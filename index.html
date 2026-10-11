@@ -113,11 +113,12 @@ nav.scrolled{box-shadow:0 2px 20px rgba(30,58,47,0.1)}
 .hs:first-child{padding-left:0;margin-left:0;border-left:none}
 .hs-n{font-family:"Cormorant Garamond",serif;font-size:2.2rem;font-weight:700;color:var(--gold2);line-height:1}
 .hs-l{font-size:.7rem;color:rgba(255,255,255,.5);margin-top:.3rem}
-.hero-r{position:relative;overflow:hidden;background:#0a1a12}
+.hero-r{position:relative;overflow:hidden;background:#0a1a12;display:flex;align-items:center}
+.hero-r-photo{position:relative;width:100%;aspect-ratio:608/520;overflow:hidden}
 .hero-art{width:100%;height:100%;display:block}
-.hero-r img{width:100%;height:100%;object-fit:cover;object-position:60% 50%;opacity:.85}
-.hero-brand-badge{position:absolute;top:2.4rem;left:2.4rem;z-index:2;animation:fsd .9s .4s ease both}
-.hero-brand-badge img{width:98px;height:auto;display:block;filter:drop-shadow(0 4px 16px rgba(0,0,0,.45))}
+.hero-r-photo img{width:100%;height:100%;object-fit:cover;object-position:0% 30%;opacity:.85}
+.hero-brand-badge{position:absolute;top:2rem;left:2rem;z-index:2;animation:fsd .9s .4s ease both}
+.hero-brand-badge img{width:80px;height:auto;display:block;filter:drop-shadow(0 4px 16px rgba(0,0,0,.45))}
 @keyframes zoom{from{transform:scale(1.06)}to{transform:scale(1)}}
 .hero-r-ov{position:absolute;inset:0;background:linear-gradient(90deg,var(--g) 0%,transparent 35%),linear-gradient(0deg,rgba(10,26,18,.7) 0%,transparent 50%)}
 .hero-badge{position:absolute;bottom:2.5rem;left:2.5rem;background:rgba(255,255,255,.95);border-radius:10px;padding:1.1rem 1.5rem;box-shadow:0 8px 32px rgba(0,0,0,.2);display:flex;align-items:center;gap:.9rem;animation:fsd .9s .5s ease both}
@@ -459,10 +460,12 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:right}
     </div>
   </div>
   <div class="hero-r">
-    <img src="/assets/office/itqan-office-1.jpg" alt="فريق إتقان لخدمات الأعمال في مقرها بالرياض" width="1600" height="900" loading="eager" decoding="async">
-    <div class="hero-r-ov"></div>
-    <div class="hero-brand-badge"><img src="/assets/logo.png" alt="شعار إتقان لخدمات الأعمال" width="98" height="101" loading="eager" decoding="async"></div>
-    <div class="hero-badge"><div class="hb-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg></div><div><div class="hb-n">الرياض</div><div class="hb-t">العليا فيو — العليا</div></div></div>
+    <div class="hero-r-photo">
+      <img src="/assets/office/itqan-office-2.jpg" alt="فريق إتقان لخدمات الأعمال في مقرها بالرياض" width="1600" height="900" loading="eager" decoding="async">
+      <div class="hero-r-ov"></div>
+      <div class="hero-brand-badge"><img src="/assets/logo.png" alt="شعار إتقان لخدمات الأعمال" width="98" height="101" loading="eager" decoding="async"></div>
+      <div class="hero-badge"><div class="hb-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg></div><div><div class="hb-n">الرياض</div><div class="hb-t">العليا فيو — العليا</div></div></div>
+    </div>
   </div>
 </section>
 <section class="why" id="why">
