@@ -14,7 +14,7 @@ Itqan is a services company: engagements are scoped to execute and operate the f
 
 ## Services
 - [Human Resources](https://www.itqanbs.sa/services/hr/): HR operations, recruitment, policies & procedures, organizational structuring, performance management.
-- [Accounting & Finance](https://www.itqanbs.sa/services/accounting/): Bookkeeping, financial reporting, Zakat and tax, financial analysis, documentation cycle organization.
+- [Accounting & Finance](https://www.itqanbs.sa/services/accounting/): Journal entries, reconciliations, Zakat and tax filings, financial analysis, documentation cycle organization.
 - [Marketing & Business Growth](https://www.itqanbs.sa/services/marketing/): Digital marketing, sales and business development, growth strategy execution.
 - [ERP & Digital Transformation](https://www.itqanbs.sa/services/erp/): ERP implementation, digital transformation, process automation, systems integration.
 - [Business Development & Consulting](https://www.itqanbs.sa/services/consulting/): Business development advisory, restructuring, feasibility studies, strategic planning.
