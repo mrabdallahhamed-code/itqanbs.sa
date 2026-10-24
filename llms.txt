@@ -10,15 +10,17 @@ Itqan is a services company: engagements are scoped to execute and operate the f
 - Unified National Number (commercial registration): 7049388205
 - Email: info@itqanbs.sa
 - Phone / WhatsApp: +966 56 905 1686
-- Website: https://www.itqanbs.sa
+- Website: https://www.itqanbs.sa (Arabic, default) | https://www.itqanbs.sa/en/ (English)
+- The website is fully bilingual: every Arabic page has a matching English page at the same path under /en/, with equivalent content.
 
 ## Services
-- [Human Resources](https://www.itqanbs.sa/services/hr/): HR operations, recruitment, policies & procedures, organizational structuring, performance management.
-- [Accounting & Finance](https://www.itqanbs.sa/services/accounting/): Journal entries, reconciliations, Zakat and tax filings, financial analysis, documentation cycle organization.
-- [Marketing & Business Growth](https://www.itqanbs.sa/services/marketing/): Digital marketing, sales and business development, growth strategy execution.
-- [ERP & Digital Transformation](https://www.itqanbs.sa/services/erp/): ERP implementation, digital transformation, process automation, systems integration.
-- [Business Development & Consulting](https://www.itqanbs.sa/services/consulting/): Business development advisory, restructuring, feasibility studies, strategic planning.
-- [Financing & Support](https://www.itqanbs.sa/services/finance/): Financing readiness assessment, file preparation, access to financing and government support programs.
+- [Human Resources](https://www.itqanbs.sa/services/hr/) ([EN](https://www.itqanbs.sa/en/services/hr/)): HR operations, recruitment, policies & procedures, organizational structuring, performance management.
+- [Accounting & Finance](https://www.itqanbs.sa/services/accounting/) ([EN](https://www.itqanbs.sa/en/services/accounting/)): Journal entries, reconciliations, Zakat and tax filings, financial analysis, documentation cycle organization.
+- [Marketing & Business Growth](https://www.itqanbs.sa/services/marketing/) ([EN](https://www.itqanbs.sa/en/services/marketing/)): Digital marketing, sales and business development, growth strategy execution.
+- [ERP & Digital Transformation](https://www.itqanbs.sa/services/erp/) ([EN](https://www.itqanbs.sa/en/services/erp/)): ERP implementation, digital transformation, process automation, systems integration.
+- [Business Development & Consulting](https://www.itqanbs.sa/services/consulting/) ([EN](https://www.itqanbs.sa/en/services/consulting/)): Business development advisory, restructuring, feasibility studies, strategic planning.
+- [Financing & Support](https://www.itqanbs.sa/services/finance/) ([EN](https://www.itqanbs.sa/en/services/finance/)): Financing readiness assessment, file preparation, access to financing and government support programs.
+- [Company Formation](https://www.itqanbs.sa/services/formation/) ([EN](https://www.itqanbs.sa/en/services/formation/)): incorporating companies of all legal forms for Saudi and non-Saudi owners, issuing formation contracts/articles of association, and following up through to activity-start requirements.
 
 ## Sectors
 - [Sectors we serve](https://www.itqanbs.sa/sectors/)
