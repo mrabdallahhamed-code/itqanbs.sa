@@ -30,6 +30,7 @@ Itqan is a services company: engagements are scoped to execute and operate the f
 - [Simam (صمام)](https://simam.itqanbs.sa/): compliance and governance platform.
 - [Itqan Store (متجر إتقان)](https://www.itqanbs.sa/): on-demand feasibility studies and specialized consulting marketplace.
 - [Mehwar (محور إتقان)](https://www.itqanbs.sa/): operational hub platform.
+- [Estirdad (استرداد من إتقان)](https://estirdad.itqanbs.sa/): commercial debt-collection platform (coming soon).
 
 ## Resources
 - [Blog](https://www.itqanbs.sa/blog/): guides on company formation, MISA investment registration, ERP/ZATCA compliance, and related regulatory topics in Saudi Arabia.
