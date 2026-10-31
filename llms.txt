@@ -31,6 +31,7 @@ Itqan is a services company: engagements are scoped to execute and operate the f
 - [Itqan Store (متجر إتقان)](https://www.itqanbs.sa/): on-demand feasibility studies and specialized consulting marketplace.
 - [Mehwar (محور إتقان)](https://www.itqanbs.sa/): operational hub platform.
 - [Estirdad (استرداد من إتقان)](https://www.itqanbs.sa/platforms/): debt-collection platform for companies and individuals (coming soon).
+- [Rukn by Itqan (ركن من إتقان)](https://rukn.itqanbs.sa/): marketplace for productive families, home businesses and freelancers in Riyadh, with secure payment and organised delivery (coming soon).
 
 ## Resources
 - [Blog](https://www.itqanbs.sa/blog/): guides on company formation, MISA investment registration, ERP/ZATCA compliance, and related regulatory topics in Saudi Arabia.
