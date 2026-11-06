@@ -12,6 +12,12 @@
 <url><loc>https://www.itqanbs.sa/services/finance/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 <url><loc>https://www.itqanbs.sa/sectors/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://www.itqanbs.sa/platforms/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://www.itqanbs.sa/platforms/mubtada/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.itqanbs.sa/platforms/simam/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.itqanbs.sa/platforms/store/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.itqanbs.sa/platforms/mehwar/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.itqanbs.sa/platforms/estirdad/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.itqanbs.sa/platforms/rukn/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://www.itqanbs.sa/licenses/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://www.itqanbs.sa/success-stories/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://www.itqanbs.sa/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -39,6 +45,12 @@
 <url><loc>https://www.itqanbs.sa/en/services/finance/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 <url><loc>https://www.itqanbs.sa/en/sectors/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://www.itqanbs.sa/en/platforms/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://www.itqanbs.sa/en/platforms/mubtada/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.itqanbs.sa/en/platforms/simam/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.itqanbs.sa/en/platforms/store/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.itqanbs.sa/en/platforms/mehwar/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.itqanbs.sa/en/platforms/estirdad/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.itqanbs.sa/en/platforms/rukn/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://www.itqanbs.sa/en/licenses/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://www.itqanbs.sa/en/success-stories/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://www.itqanbs.sa/en/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>

@@ -30,8 +30,16 @@ Itqan is a services company: engagements are scoped to execute and operate the f
 - [Simam by Itqan (صمام من إتقان)](https://simam.itqanbs.sa/): compliance and governance platform.
 - [Itqan Store (متجر إتقان)](https://www.itqanbs.sa/): on-demand feasibility studies and specialized consulting marketplace.
 - [Mehwar (محور إتقان)](https://www.itqanbs.sa/): operational hub platform.
-- [Estirdad (استرداد من إتقان)](https://www.itqanbs.sa/platforms/): debt-collection platform for companies and individuals (coming soon).
-- [Rukn by Itqan (ركن من إتقان)](https://rukn.itqanbs.sa/): marketplace for productive families, home businesses and freelancers in Riyadh, with secure payment and organised delivery (coming soon).
+- [Estirdad (استرداد من إتقان)](https://www.itqanbs.sa/platforms/estirdad/): debt-collection platform for companies and individuals.
+- [Rukn by Itqan (ركن من إتقان)](https://rukn.itqanbs.sa/): marketplace for productive families, home businesses and freelancers in Riyadh, with secure payment and organised delivery.
+
+## Platform pages on this site
+- [Mubtada by Itqan](https://www.itqanbs.sa/platforms/mubtada/): company formation platform.
+- [Simam by Itqan](https://www.itqanbs.sa/platforms/simam/): post-formation request tracking portal.
+- [Itqan Store](https://www.itqanbs.sa/platforms/store/): feasibility studies and specialized consulting, priced per request.
+- [Itqan Mehwar](https://www.itqanbs.sa/platforms/mehwar/): Saudi ERP (coming soon).
+- [Estirdad by Itqan](https://www.itqanbs.sa/platforms/estirdad/): debt-collection platform for companies and individuals.
+- [Rukn by Itqan](https://www.itqanbs.sa/platforms/rukn/): marketplace for productive families, home businesses and freelancers in Riyadh.
 
 ## Resources
 - [Blog](https://www.itqanbs.sa/blog/): guides on company formation, MISA investment registration, ERP/ZATCA compliance, and related regulatory topics in Saudi Arabia.
