@@ -458,7 +458,7 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:right}
         <div class="fg"><label for="cf-email">البريد الإلكتروني</label><input id="cf-email" name="email" type="email" placeholder="email@company.com" required></div>
       </div>
       <div class="fg"><label for="cf-service">الخدمة المطلوبة</label>
-        <select id="cf-service" name="service"><option value="">اختر الخدمة...</option><option>الموارد البشرية</option><option>المحاسبة والمالية</option><option>التسويق ونمو الأعمال</option><option>ERP والتحول الرقمي</option><option>الاستشارات وتطوير الأعمال</option><option>التمويل والدعم</option><option>أخرى</option></select>
+        <select id="cf-service" name="service"><option value="" data-k="">اختر الخدمة...</option><option value="تأسيس شركة سعودية" data-k="saudi">تأسيس شركة سعودية</option><option value="تأسيس شركة أجنبية (استثمار أجنبي)" data-k="foreign">تأسيس شركة أجنبية (استثمار أجنبي)</option><option value="خدمات الموارد البشرية" data-k="hr">خدمات الموارد البشرية</option><option value="المحاسبة والزكاة والضريبة" data-k="acc">المحاسبة والزكاة والضريبة</option><option value="خدمات الدعم الإداري وما بعد التأسيس" data-k="support">خدمات الدعم الإداري وما بعد التأسيس</option><option value="التمويل والدعم" data-k="finance">التمويل والدعم</option><option value="ERP والتحول الرقمي" data-k="erp">ERP والتحول الرقمي</option><option value="الاستشارات ودراسات الجدوى" data-k="consult">الاستشارات ودراسات الجدوى</option><option value="التسويق ونمو الأعمال" data-k="mkt">التسويق ونمو الأعمال</option><option value="أخرى" data-k="other">أخرى</option></select>
       </div>
       <div class="fg"><label for="cf-msg">نبذة عن احتياجك</label><textarea id="cf-msg" name="message" rows="4" placeholder="كيف يمكننا مساعدتك؟"></textarea></div>
       <button type="submit" class="bp" style="width:100%;border:none;padding:1rem;font-size:1rem;border-radius:8px">إرسال الطلب ←</button>
@@ -511,6 +511,7 @@ window.addEventListener("scroll",()=>document.getElementById("nav").classList.to
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth",block:"start"})}}));
 const ro=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add("visible")}),{threshold:0.1});
 document.querySelectorAll(".reveal").forEach(el=>ro.observe(el));
+(function(){var k=new URLSearchParams(location.search).get("service");if(!k)return;var o=document.querySelector('#cf-service option[data-k="'+k+'"]');if(o)o.parentNode.value=o.value})();
 function toggleMenu(){
   const menu=document.getElementById("mobileMenu");
   const btn=document.querySelector(".ham");

@@ -458,7 +458,7 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:left}
         <div class="fg"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" placeholder="email@company.com" required></div>
       </div>
       <div class="fg"><label for="cf-service">Service Needed</label>
-        <select id="cf-service" name="service"><option value="">Choose a service...</option><option>Human Resources</option><option>Accounting &amp; Finance</option><option>Marketing &amp; Business Growth</option><option>ERP &amp; Digital Transformation</option><option>Consulting &amp; Business Development</option><option>Financing &amp; Support</option><option>Other</option></select>
+        <select id="cf-service" name="service"><option value="" data-k="">Select a service...</option><option value="Saudi company formation" data-k="saudi">Saudi company formation</option><option value="Foreign company formation (foreign investment)" data-k="foreign">Foreign company formation (foreign investment)</option><option value="Human resources services" data-k="hr">Human resources services</option><option value="Accounting, zakat and tax" data-k="acc">Accounting, zakat and tax</option><option value="Administrative support and post-incorporation services" data-k="support">Administrative support and post-incorporation services</option><option value="Financing and support" data-k="finance">Financing and support</option><option value="ERP and digital transformation" data-k="erp">ERP and digital transformation</option><option value="Consulting and feasibility studies" data-k="consult">Consulting and feasibility studies</option><option value="Marketing and business growth" data-k="mkt">Marketing and business growth</option><option value="Other" data-k="other">Other</option></select>
       </div>
       <div class="fg"><label for="cf-msg">About Your Needs</label><textarea id="cf-msg" name="message" rows="4" placeholder="How can we help you?"></textarea></div>
       <button type="submit" class="bp" style="width:100%;border:none;padding:1rem;font-size:1rem;border-radius:8px">Send Request ←</button>
@@ -511,6 +511,7 @@ window.addEventListener("scroll",()=>document.getElementById("nav").classList.to
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth",block:"start"})}}));
 const ro=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add("visible")}),{threshold:0.1});
 document.querySelectorAll(".reveal").forEach(el=>ro.observe(el));
+(function(){var k=new URLSearchParams(location.search).get("service");if(!k)return;var o=document.querySelector('#cf-service option[data-k="'+k+'"]');if(o)o.parentNode.value=o.value})();
 function toggleMenu(){
   const menu=document.getElementById("mobileMenu");
   const btn=document.querySelector(".ham");
