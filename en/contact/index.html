@@ -446,9 +446,8 @@ p,.faq-a,.svc-item p{text-align:justify;text-align-last:left}
         <a href="https://wa.me/966569051686?text=Hello%2C%20I%27m%20not%20sure%20which%20service%20fits%20my%20needs%2C%20can%20you%20help%3F" target="_blank" rel="noopener" class="bp" style="display:inline-block">I Need Help Deciding</a>
       </div>
     </div>
-    <!-- Note: GitHub Pages hosting is static and does not run forms itself.
-         Replace ACTION_URL with a service link such as Formspree or Web3Forms so messages actually reach your inbox -->
-    <form class="cform" action="https://formspree.io/f/ACTION_URL" method="POST" onsubmit="handleSubmit(event)">
+    <form class="cform" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleSubmit(event)">
+      <input type="hidden" name="access_key" value="9e1c62c3-32a5-4f4a-b917-634c75327784"><input type="hidden" name="subject" value="New message from Itqan website"><input type="hidden" name="from_name" value="موقع إتقان"><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
       <div class="cf-title">Contact Form</div>
       <div class="frow">
         <div class="fg"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" placeholder="John Smith" required></div>
@@ -524,17 +523,15 @@ function handleSubmit(e){
   const form=e.target;
   const btn=form.querySelector("button[type=submit]");
   const orig=btn.textContent;
+  btn.disabled=true;
   fetch(form.action,{method:"POST",body:new FormData(form),headers:{Accept:"application/json"}})
-    .then(()=>{
-      btn.textContent="✓ Sent successfully!";
-      btn.style.background="var(--g3)";
+    .then(r=>r.json().then(d=>({ok:r.ok&&d.success})))
+    .then(x=>{
+      if(x.ok){btn.textContent="✓ Sent successfully!";btn.style.background="var(--g3)";form.reset()}
+      else{btn.textContent="Something went wrong. Please use WhatsApp or call us."}
     })
-    .catch(()=>{
-      btn.textContent="An error occurred, please try by phone";
-    })
-    .finally(()=>{
-      setTimeout(()=>{btn.textContent=orig;btn.style.background="";form.reset()},3000);
-    });
+    .catch(()=>{btn.textContent="Something went wrong. Please use WhatsApp or call us."})
+    .finally(()=>{setTimeout(()=>{btn.textContent=orig;btn.style.background="";btn.disabled=false},4000)});
 }
 
 </script>
