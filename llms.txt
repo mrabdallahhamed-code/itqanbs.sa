@@ -1,6 +1,6 @@
 # Itqan Business Services (إتقان لخدمات الأعمال)
 
-> Itqan Business Services is a Riyadh-based business services provider founded in March 2025. Itqan delivers hands-on, done-for-you business services — not strategy-only consulting — across HR, accounting & finance, marketing & growth, ERP & digital transformation, business development & feasibility studies, and financing & support, for companies operating in Saudi Arabia.
+> Itqan Business Services is a Riyadh-based business services provider founded in March 2025. Itqan delivers hands-on, done-for-you business services — not strategy-only consulting — across HR, accounting & finance, marketing & growth, ERP & digital transformation, business development & feasibility studies, for companies operating in Saudi Arabia.
 
 Itqan is a services company: engagements are scoped to execute and operate the function in question for the client, not solely to advise. Itqan also builds and operates specialized digital platforms that extend its services.
 
@@ -19,7 +19,6 @@ Itqan is a services company: engagements are scoped to execute and operate the f
 - [Marketing & Business Growth](https://www.itqanbs.sa/services/marketing/) ([EN](https://www.itqanbs.sa/en/services/marketing/)): Digital marketing, sales and business development, growth strategy execution.
 - [ERP & Digital Transformation](https://www.itqanbs.sa/services/erp/) ([EN](https://www.itqanbs.sa/en/services/erp/)): ERP implementation, digital transformation, process automation, systems integration.
 - [Business Development & Consulting](https://www.itqanbs.sa/services/consulting/) ([EN](https://www.itqanbs.sa/en/services/consulting/)): Business development advisory, restructuring, feasibility studies, strategic planning.
-- [Financing & Support](https://www.itqanbs.sa/services/finance/) ([EN](https://www.itqanbs.sa/en/services/finance/)): Financing readiness assessment, file preparation, access to financing and government support programs.
 - [Company Formation](https://www.itqanbs.sa/services/formation/) ([EN](https://www.itqanbs.sa/en/services/formation/)): incorporating companies of all legal forms for Saudi and non-Saudi owners, issuing formation contracts/articles of association, and following up through to activity-start requirements.
 
 ## Sectors
