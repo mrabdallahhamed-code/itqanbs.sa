@@ -163,7 +163,7 @@ section{padding:7rem 4rem;scroll-margin-top:114px}
 .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--g3);box-shadow:0 0 0 3px rgba(30,58,47,.07);background:var(--w)}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 footer{background:var(--t);padding:5rem 4rem 2.5rem}
-.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:2rem}
+.ft{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:2rem}
 .fb-logo img{height:50px;width:auto;object-fit:contain;background:rgba(255,255,255,.9);border-radius:8px;padding:5px 10px;margin-bottom:1rem}
 .fb p{font-size:.83rem;color:rgba(255,255,255,.7);line-height:1.85;max-width:270px;font-weight:300}
 .fc h5,
