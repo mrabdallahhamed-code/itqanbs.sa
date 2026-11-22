@@ -22,6 +22,8 @@ Itqan is a services company: engagements are scoped to execute and operate the f
 - [Support & Operations](https://www.itqanbs.sa/services/support/) ([EN](https://www.itqanbs.sa/en/services/support/)): HR, administrative support, marketing and ERP after formation.
 - [Company Formation](https://www.itqanbs.sa/services/formation/) ([EN](https://www.itqanbs.sa/en/services/formation/)): incorporating companies of all legal forms for Saudi and non-Saudi owners, issuing formation contracts/articles of association, and following up through to activity-start requirements.
 
+- [Foreign Investors](https://www.itqanbs.sa/foreign-investor/) ([EN](https://www.itqanbs.sa/en/foreign-investor/)): investment license (MISA) and company incorporation in Saudi Arabia for non-Saudi investors, with guides in the blog.
+
 ## Sectors
 - [Sectors we serve](https://www.itqanbs.sa/sectors/)
 
